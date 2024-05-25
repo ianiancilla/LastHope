@@ -6,6 +6,8 @@ public class Target : MonoBehaviour
     [SerializeField] private ParticleSystem explodeVFX;
     [SerializeField] private ParticleSystem groundHitVFX;
 
+    private AsteroidSpawner mySpawner;
+
     public event Action<Target> OnTargetDestroyed;
 
     // cache
@@ -27,7 +29,14 @@ public class Target : MonoBehaviour
     private void HittingGround(Ground ground)
     {
         ground.HitByAsteroid();
-        if (groundHitVFX != null) { Instantiate(groundHitVFX, transform.position, Quaternion.identity, vfxParent); }
+        if (groundHitVFX != null) 
+        {
+            GameObject groundHitGO = Instantiate(groundHitVFX, transform.position, Quaternion.identity, vfxParent).gameObject;
+
+            // spawns need to be on the same sector layer, for both collisions and camera culling
+            Helpers.ChangeLayersRecursively(groundHitGO, gameObject.layer);
+        }
+
         Explode();
     }
 
@@ -35,7 +44,10 @@ public class Target : MonoBehaviour
     {
         if (explodeVFX != null)
         {
-            Instantiate(explodeVFX, transform.position, Quaternion.identity, vfxParent);
+            GameObject explodeGO = Instantiate(explodeVFX, transform.position, Quaternion.identity, vfxParent).gameObject;
+            // spawns need to be on the same sector layer, for both collisions and camera culling
+            Helpers.ChangeLayersRecursively(explodeGO, gameObject.layer);
+
         }
         Destroy(gameObject);
     }

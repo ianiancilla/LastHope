@@ -18,8 +18,6 @@ public class Cannon : MonoBehaviour
 
     private void Start()
     {
-        FindFirstObjectByType<InputReader>().ShootInputSector1 += Shoot;
-
         isLoaded = true;
     }
 
@@ -67,17 +65,27 @@ public class Cannon : MonoBehaviour
             
     }
 
-    private void Shoot()
+    public void Shoot()
     {
         if (!isLoaded) return;
 
-        if (projectilePrefab == null) { return ; }
+        if (projectilePrefab == null) 
+        {
+            Debug.Log("No projectile prefab set on cannon.");
+            return ; 
+        }
         
+        // spawn and init projectile, and set on correct layer
         GameObject projectileGO = Instantiate(projectilePrefab,
                                                 projectileOrigin.position,
                                                 Quaternion.identity,
                                                 this.transform);
         projectileGO.GetComponent<Projectile>().SetMoveVector(cannonSprite.transform.up);
+
+        // spawns need to be on the same sector layer, for both collisions and camera culling
+        Helpers.ChangeLayersRecursively(projectileGO, gameObject.layer);
+
+        // reload handling
         isLoaded = false;
         reloadTimer = reloadTime;
     }

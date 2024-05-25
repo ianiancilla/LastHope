@@ -25,6 +25,138 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     ""name"": ""Controls"",
     ""maps"": [
         {
+            ""name"": ""Level"",
+            ""id"": ""37735f47-51c3-48e2-9181-ba688a4c550c"",
+            ""actions"": [
+                {
+                    ""name"": ""ShootSector0"",
+                    ""type"": ""Button"",
+                    ""id"": ""b5ee8b75-3bdb-42af-b967-43f907fac265"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ShootSector1"",
+                    ""type"": ""Button"",
+                    ""id"": ""235cb23b-7d7f-4afa-8be6-bac379b29e9f"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ShootSector2"",
+                    ""type"": ""Button"",
+                    ""id"": ""ecae19d5-defc-432f-a559-b94c71c54a97"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ShootSector3"",
+                    ""type"": ""Button"",
+                    ""id"": ""2cc5512e-5f18-441a-aa71-768038b8c808"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""ddc73575-85d0-4483-9a41-561a378cca8f"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""ShootSector1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7041ebf5-43c5-4d2f-8553-318fbbc70842"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""ShootSector1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""33f613b5-f41c-4d24-8846-76d4feb49f55"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""ShootSector2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c922d9a4-d0e7-4f68-ba26-a2b3cf9af5a6"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""ShootSector2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2a801325-891d-45cd-bcb7-61961681cd9b"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""ShootSector0"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3492962f-232a-4806-b238-42d5fa760bba"",
+                    ""path"": ""<Keyboard>/t"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""ShootSector0"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c8f11de1-a7a2-4b1f-96f4-27af9fb71d04"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""ShootSector3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ecd51c76-4a3e-4ee8-9a1a-c99cc0ac219a"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""ShootSector3"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
             ""name"": ""UI"",
             ""id"": ""272f6d14-89ba-496f-b7ff-215263d3219f"",
             ""actions"": [
@@ -539,45 +671,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
-        },
-        {
-            ""name"": ""Level"",
-            ""id"": ""37735f47-51c3-48e2-9181-ba688a4c550c"",
-            ""actions"": [
-                {
-                    ""name"": ""ShootSector1"",
-                    ""type"": ""Button"",
-                    ""id"": ""235cb23b-7d7f-4afa-8be6-bac379b29e9f"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""ddc73575-85d0-4483-9a41-561a378cca8f"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Gamepad"",
-                    ""action"": ""ShootSector1"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""7041ebf5-43c5-4d2f-8553-318fbbc70842"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""ShootSector1"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
         }
     ],
     ""controlSchemes"": [
@@ -621,6 +714,12 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         }
     ]
 }");
+        // Level
+        m_Level = asset.FindActionMap("Level", throwIfNotFound: true);
+        m_Level_ShootSector0 = m_Level.FindAction("ShootSector0", throwIfNotFound: true);
+        m_Level_ShootSector1 = m_Level.FindAction("ShootSector1", throwIfNotFound: true);
+        m_Level_ShootSector2 = m_Level.FindAction("ShootSector2", throwIfNotFound: true);
+        m_Level_ShootSector3 = m_Level.FindAction("ShootSector3", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -633,15 +732,12 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_UI_ScrollWheel = m_UI.FindAction("ScrollWheel", throwIfNotFound: true);
         m_UI_TrackedDevicePosition = m_UI.FindAction("TrackedDevicePosition", throwIfNotFound: true);
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
-        // Level
-        m_Level = asset.FindActionMap("Level", throwIfNotFound: true);
-        m_Level_ShootSector1 = m_Level.FindAction("ShootSector1", throwIfNotFound: true);
     }
 
     ~@Controls()
     {
-        Debug.Assert(!m_UI.enabled, "This will cause a leak and performance issues, Controls.UI.Disable() has not been called.");
         Debug.Assert(!m_Level.enabled, "This will cause a leak and performance issues, Controls.Level.Disable() has not been called.");
+        Debug.Assert(!m_UI.enabled, "This will cause a leak and performance issues, Controls.UI.Disable() has not been called.");
     }
 
     public void Dispose()
@@ -699,6 +795,76 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     {
         return asset.FindBinding(bindingMask, out action);
     }
+
+    // Level
+    private readonly InputActionMap m_Level;
+    private List<ILevelActions> m_LevelActionsCallbackInterfaces = new List<ILevelActions>();
+    private readonly InputAction m_Level_ShootSector0;
+    private readonly InputAction m_Level_ShootSector1;
+    private readonly InputAction m_Level_ShootSector2;
+    private readonly InputAction m_Level_ShootSector3;
+    public struct LevelActions
+    {
+        private @Controls m_Wrapper;
+        public LevelActions(@Controls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @ShootSector0 => m_Wrapper.m_Level_ShootSector0;
+        public InputAction @ShootSector1 => m_Wrapper.m_Level_ShootSector1;
+        public InputAction @ShootSector2 => m_Wrapper.m_Level_ShootSector2;
+        public InputAction @ShootSector3 => m_Wrapper.m_Level_ShootSector3;
+        public InputActionMap Get() { return m_Wrapper.m_Level; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(LevelActions set) { return set.Get(); }
+        public void AddCallbacks(ILevelActions instance)
+        {
+            if (instance == null || m_Wrapper.m_LevelActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_LevelActionsCallbackInterfaces.Add(instance);
+            @ShootSector0.started += instance.OnShootSector0;
+            @ShootSector0.performed += instance.OnShootSector0;
+            @ShootSector0.canceled += instance.OnShootSector0;
+            @ShootSector1.started += instance.OnShootSector1;
+            @ShootSector1.performed += instance.OnShootSector1;
+            @ShootSector1.canceled += instance.OnShootSector1;
+            @ShootSector2.started += instance.OnShootSector2;
+            @ShootSector2.performed += instance.OnShootSector2;
+            @ShootSector2.canceled += instance.OnShootSector2;
+            @ShootSector3.started += instance.OnShootSector3;
+            @ShootSector3.performed += instance.OnShootSector3;
+            @ShootSector3.canceled += instance.OnShootSector3;
+        }
+
+        private void UnregisterCallbacks(ILevelActions instance)
+        {
+            @ShootSector0.started -= instance.OnShootSector0;
+            @ShootSector0.performed -= instance.OnShootSector0;
+            @ShootSector0.canceled -= instance.OnShootSector0;
+            @ShootSector1.started -= instance.OnShootSector1;
+            @ShootSector1.performed -= instance.OnShootSector1;
+            @ShootSector1.canceled -= instance.OnShootSector1;
+            @ShootSector2.started -= instance.OnShootSector2;
+            @ShootSector2.performed -= instance.OnShootSector2;
+            @ShootSector2.canceled -= instance.OnShootSector2;
+            @ShootSector3.started -= instance.OnShootSector3;
+            @ShootSector3.performed -= instance.OnShootSector3;
+            @ShootSector3.canceled -= instance.OnShootSector3;
+        }
+
+        public void RemoveCallbacks(ILevelActions instance)
+        {
+            if (m_Wrapper.m_LevelActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(ILevelActions instance)
+        {
+            foreach (var item in m_Wrapper.m_LevelActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_LevelActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public LevelActions @Level => new LevelActions(this);
 
     // UI
     private readonly InputActionMap m_UI;
@@ -817,52 +983,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         }
     }
     public UIActions @UI => new UIActions(this);
-
-    // Level
-    private readonly InputActionMap m_Level;
-    private List<ILevelActions> m_LevelActionsCallbackInterfaces = new List<ILevelActions>();
-    private readonly InputAction m_Level_ShootSector1;
-    public struct LevelActions
-    {
-        private @Controls m_Wrapper;
-        public LevelActions(@Controls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @ShootSector1 => m_Wrapper.m_Level_ShootSector1;
-        public InputActionMap Get() { return m_Wrapper.m_Level; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(LevelActions set) { return set.Get(); }
-        public void AddCallbacks(ILevelActions instance)
-        {
-            if (instance == null || m_Wrapper.m_LevelActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_LevelActionsCallbackInterfaces.Add(instance);
-            @ShootSector1.started += instance.OnShootSector1;
-            @ShootSector1.performed += instance.OnShootSector1;
-            @ShootSector1.canceled += instance.OnShootSector1;
-        }
-
-        private void UnregisterCallbacks(ILevelActions instance)
-        {
-            @ShootSector1.started -= instance.OnShootSector1;
-            @ShootSector1.performed -= instance.OnShootSector1;
-            @ShootSector1.canceled -= instance.OnShootSector1;
-        }
-
-        public void RemoveCallbacks(ILevelActions instance)
-        {
-            if (m_Wrapper.m_LevelActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(ILevelActions instance)
-        {
-            foreach (var item in m_Wrapper.m_LevelActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_LevelActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public LevelActions @Level => new LevelActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     public InputControlScheme KeyboardMouseScheme
     {
@@ -890,6 +1010,13 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             return asset.controlSchemes[m_TouchSchemeIndex];
         }
     }
+    public interface ILevelActions
+    {
+        void OnShootSector0(InputAction.CallbackContext context);
+        void OnShootSector1(InputAction.CallbackContext context);
+        void OnShootSector2(InputAction.CallbackContext context);
+        void OnShootSector3(InputAction.CallbackContext context);
+    }
     public interface IUIActions
     {
         void OnNavigate(InputAction.CallbackContext context);
@@ -902,9 +1029,5 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnScrollWheel(InputAction.CallbackContext context);
         void OnTrackedDevicePosition(InputAction.CallbackContext context);
         void OnTrackedDeviceOrientation(InputAction.CallbackContext context);
-    }
-    public interface ILevelActions
-    {
-        void OnShootSector1(InputAction.CallbackContext context);
     }
 }

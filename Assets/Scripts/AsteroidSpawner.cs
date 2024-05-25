@@ -43,8 +43,11 @@ public class AsteroidSpawner : MonoBehaviour
         // find random point in spawnbox collider
         Vector2 spawnPos = new Vector2(Random.Range(boundMin.x, boundMax.x),
                                         Random.Range(boundMin.y, boundMax.y));
+        
+        GameObject asteroidGO = Instantiate(asteroidPrefab, spawnPos, Quaternion.identity, this.transform);
 
-        Instantiate(asteroidPrefab, spawnPos, Quaternion.identity, this.transform);
+        // asteroids need to be on the same sector layer, for both collisions and camera culling
+        Helpers.ChangeLayersRecursively(asteroidGO, gameObject.layer);
     }
 
     private void SetSpawnTimer()
