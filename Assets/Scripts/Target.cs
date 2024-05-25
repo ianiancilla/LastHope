@@ -37,4 +37,9 @@ public class Target : MonoBehaviour
     {
         OnTargetDestroyed?.Invoke(this);
     }
+
+    public void ShotDown()
+    {
+        Explode();
+    }
 }

@@ -83,7 +83,7 @@ MonoBehaviour:
   projectileOrigin: {fileID: 8457815347373590336}
   aimingSpeed: 0.6
   projectilePrefab: {fileID: 4472082105791527042, guid: 9fc42d4ab96d43c4bbac55a05d4fcca0, type: 3}
-  reloadTime: 0
+  reloadTime: 2
 --- !u!58 &5089868243142030009
 CircleCollider2D:
   m_ObjectHideFlags: 0

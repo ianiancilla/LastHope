@@ -13,16 +13,21 @@ public class Cannon : MonoBehaviour
 
     private Target currentTarget;
     private List<Target> targets = new List<Target>();
+    private bool isLoaded;
+    private float reloadTimer;
 
     private void Start()
     {
         FindFirstObjectByType<InputReader>().ShootInputSector1 += Shoot;
+
+        isLoaded = true;
     }
 
     private void Update()
     {
         UpdateCurrentTarget();
         Aim();
+        if (!isLoaded) { Reload(); }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -64,6 +69,8 @@ public class Cannon : MonoBehaviour
 
     private void Shoot()
     {
+        if (!isLoaded) return;
+
         if (projectilePrefab == null) { return ; }
         
         GameObject projectileGO = Instantiate(projectilePrefab,
@@ -71,5 +78,13 @@ public class Cannon : MonoBehaviour
                                                 Quaternion.identity,
                                                 this.transform);
         projectileGO.GetComponent<Projectile>().SetMoveVector(cannonSprite.transform.up);
+        isLoaded = false;
+        reloadTimer = reloadTime;
+    }
+
+    private void Reload()
+    {
+        reloadTimer -= Time.deltaTime;
+        if (reloadTimer < 0) { isLoaded = true; }
     }
 }
