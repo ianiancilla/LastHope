@@ -3,11 +3,18 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    [SerializeField] private Transform vfxParent;
     [SerializeField] private ParticleSystem explodeVFX;
     [SerializeField] private ParticleSystem groundHitVFX;
 
     public event Action<Target> OnTargetDestroyed;
+
+    // cache
+    Transform vfxParent;
+
+    private void Start()
+    {
+        vfxParent = GameObject.Find("VFXParent").transform;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

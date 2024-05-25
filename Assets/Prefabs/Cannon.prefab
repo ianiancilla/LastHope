@@ -43,7 +43,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6588587550774955442}
   - component: {fileID: 6263170523506225442}
-  - component: {fileID: 5089868243142030009}
+  - component: {fileID: 638731869623450976}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MonoBehaviour:
   aimingSpeed: 0.6
   projectilePrefab: {fileID: 4472082105791527042, guid: 9fc42d4ab96d43c4bbac55a05d4fcca0, type: 3}
   reloadTime: 2
---- !u!58 &5089868243142030009
-CircleCollider2D:
+--- !u!61 &638731869623450976
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -118,8 +118,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 15
+  m_Offset: {x: 0, y: 4}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 17, y: 9}
+  m_EdgeRadius: 0
 --- !u!1 &5074771302028559483
 GameObject:
   m_ObjectHideFlags: 0
