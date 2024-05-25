@@ -137,9 +137,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallingSpeedMax: 4
   fallingSpeedMin: 4
-  vfxParent: {fileID: 0}
-  explodeVFX: {fileID: 8010841460971978947, guid: b421010818221174994376d780b8b319, type: 3}
-  groundHitVFX: {fileID: 4326587679791551502, guid: 07aac3289e61f384caed665b4d2ac233, type: 3}
 --- !u!114 &3912194323565749139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,6 +149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cecb19f5cee8ad4ababeb3c57c948da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vfxParent: {fileID: 0}
+  explodeVFX: {fileID: 8010841460971978947, guid: b421010818221174994376d780b8b319, type: 3}
+  groundHitVFX: {fileID: 4326587679791551502, guid: 07aac3289e61f384caed665b4d2ac233, type: 3}
 --- !u!58 &1639891438862706800
 CircleCollider2D:
   m_ObjectHideFlags: 0

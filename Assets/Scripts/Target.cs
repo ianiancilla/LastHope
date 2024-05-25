@@ -1,16 +1,41 @@
+using System;
 using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private Transform vfxParent;
+    [SerializeField] private ParticleSystem explodeVFX;
+    [SerializeField] private ParticleSystem groundHitVFX;
+
+    public event Action<Target> OnTargetDestroyed;
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.TryGetComponent<Ground>(out Ground ground))
+        {
+            HittingGround(ground);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void HittingGround(Ground ground)
     {
-        
+        ground.HitByAsteroid();
+        if (groundHitVFX != null) { Instantiate(groundHitVFX, transform.position, Quaternion.identity, vfxParent); }
+        Explode();
+    }
+
+    private void Explode()
+    {
+        if (explodeVFX != null)
+        {
+            Debug.Log("BOOM");
+            Instantiate(explodeVFX, transform.position, Quaternion.identity, vfxParent);
+        }
+        Destroy(gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        OnTargetDestroyed?.Invoke(this);
     }
 }

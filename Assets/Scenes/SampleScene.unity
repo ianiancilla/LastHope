@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &483478242 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6839712985037371183, guid: 27b94a85477ed75428120c15f2d71bf8, type: 3}
+  m_PrefabInstance: {fileID: 7734593260689334527}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,6 +304,10 @@ PrefabInstance:
       propertyPath: vfxParent
       value: 
       objectReference: {fileID: 938467202}
+    - target: {fileID: 3912194323565749139, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
+      propertyPath: vfxParent
+      value: 
+      objectReference: {fileID: 938467202}
     - target: {fileID: 5404159201443359458, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5
@@ -360,6 +369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cannon
       objectReference: {fileID: 0}
+    - target: {fileID: 6263170523506225442, guid: 27b94a85477ed75428120c15f2d71bf8, type: 3}
+      propertyPath: cannonSprite
+      value: 
+      objectReference: {fileID: 483478242}
     - target: {fileID: 6588587550774955442, guid: 27b94a85477ed75428120c15f2d71bf8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
