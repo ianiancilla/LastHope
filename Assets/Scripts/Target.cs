@@ -28,7 +28,6 @@ public class Target : MonoBehaviour
     {
         if (explodeVFX != null)
         {
-            Debug.Log("BOOM");
             Instantiate(explodeVFX, transform.position, Quaternion.identity, vfxParent);
         }
         Destroy(gameObject);

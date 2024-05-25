@@ -135,8 +135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3598f19ec28a1e7448273fa0ff0ac74c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallingSpeedMax: 4
-  fallingSpeedMin: 4
+  fallingSpeedMax: 0.5
+  fallingSpeedMin: 3
 --- !u!114 &3912194323565749139
 MonoBehaviour:
   m_ObjectHideFlags: 0
