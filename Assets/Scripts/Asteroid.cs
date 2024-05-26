@@ -1,14 +1,13 @@
 using System;
 using UnityEngine;
 
-public class Target : MonoBehaviour
+public class Asteroid : MonoBehaviour
 {
     [SerializeField] private ParticleSystem explodeVFX;
     [SerializeField] private ParticleSystem groundHitVFX;
 
-    private AsteroidSpawner mySpawner;
 
-    public event Action<Target> OnTargetDestroyed;
+    public event Action<Asteroid> OnAsteroidExplode;
 
     // cache
     Transform vfxParent;
@@ -49,12 +48,8 @@ public class Target : MonoBehaviour
             Helpers.ChangeLayersRecursively(explodeGO, gameObject.layer);
 
         }
-        Destroy(gameObject);
-    }
-
-    private void OnDestroy()
-    {
-        OnTargetDestroyed?.Invoke(this);
+        OnAsteroidExplode?.Invoke(this);
+        gameObject.SetActive(false);
     }
 
     public void ShotDown()
