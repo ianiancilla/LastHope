@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<MidiSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SoundFonts>
+    <SoundFontInfo>
+      <Name>GeneralUser GS v1.471</Name>
+      <PatchCount>269</PatchCount>
+      <WaveCount>864</WaveCount>
+      <WaveSize>35262462</WaveSize>
+      <SF2Path>C:/Users/thier/AppData/LocalLow/Musit/Maestro MPTK\SoundFont\GeneralUser GS v1.471.sf2</SF2Path>
+    </SoundFontInfo>
+  </SoundFonts>
+  <IndexSelectedSF>0</IndexSelectedSF>
+  <MidiFiles>
+    <string>Albinoni - Adagio</string>
+    <string>Bach - Fugue</string>
+    <string>Bach - Little fugue G minor</string>
+    <string>Bach - Prelude</string>
+    <string>Bach - The Art of Fugue</string>
+    <string>Bach - Toccata in D minor Organ</string>
+    <string>Bach - Toccata in D minor Piano</string>
+    <string>Bach - Trisonate 3iem mvt</string>
+    <string>Bizet - Arlesienne</string>
+    <string>Debussy - Clair De Lune</string>
+    <string>Debussy - Clair De Lune V2</string>
+    <string>Liszt - La Campanella</string>
+    <string>Liszt Saint-Saens - Danse Macabre</string>
+    <string>Mozart - Requiem Confutatis</string>
+    <string>Mozart - Requiem Dies Irae</string>
+    <string>Mozart - Requiem Introitus</string>
+    <string>Mozart - Sonate 11 Alla Turca</string>
+    <string>MPTK_Example 0001</string>
+    <string>MPTK_Example 0021</string>
+    <string>Sibelius - Finlandia</string>
+    <string>Sibelius - Romance</string>
+    <string>Tchaikovsky - Flower Waltz</string>
+    <string>USERSONG006</string>
+    <string>USERSONG007</string>
+    <string>USERSONG010</string>
+    <string>USERSONG011</string>
+    <string>USERSONG012</string>
+    <string>USERSONG013</string>
+    <string>USERSONG014</string>
+    <string>USERSONG015</string>
+  </MidiFiles>
+</MidiSet>
