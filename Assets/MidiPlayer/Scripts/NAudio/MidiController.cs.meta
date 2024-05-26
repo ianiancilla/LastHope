@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d8a564fbe2554ce4ea511c7db11e18d3
+timeCreated: 1514805500
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107994
+  packageName: Maestro - Midi Player Tool Kit - Free
+  packageVersion: 2.11.2
+  assetPath: Assets/MidiPlayer/Scripts/NAudio/MidiController.cs
+  uploadId: 643383
