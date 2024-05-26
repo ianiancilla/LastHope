@@ -32,7 +32,7 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.TryGetComponent<Target>(out Target target))
+        if (collision.gameObject.TryGetComponent<Asteroid>(out Asteroid target))
         {
             target.ShotDown();
             Destroy(gameObject);

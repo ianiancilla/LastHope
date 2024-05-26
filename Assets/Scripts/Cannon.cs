@@ -11,8 +11,8 @@ public class Cannon : MonoBehaviour
     [SerializeField] float reloadTime;
 
 
-    private Target currentTarget;
-    private List<Target> targets = new List<Target>();
+    private Asteroid currentTarget;
+    private List<Asteroid> targets = new List<Asteroid>();
     private bool isLoaded;
     private float reloadTimer;
 
@@ -30,7 +30,7 @@ public class Cannon : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.gameObject.TryGetComponent<Target>(out Target target)) return;
+        if (!collision.gameObject.TryGetComponent<Asteroid>(out Asteroid target)) return;
 
         if (!targets.Contains(target))
         {
@@ -39,7 +39,7 @@ public class Cannon : MonoBehaviour
         }
     }
 
-    private void OnCurrentTargetDestroyed(Target target)
+    private void OnCurrentTargetDestroyed(Asteroid target)
     {
         targets.Remove(target);
         currentTarget = null;
@@ -47,7 +47,7 @@ public class Cannon : MonoBehaviour
     private void UpdateCurrentTarget()
     {
         float targetDistanceFromGround = Mathf.Infinity;
-        foreach (Target target in targets)
+        foreach (Asteroid target in targets)
         {
             if (target.transform.position.y < targetDistanceFromGround)
             {
