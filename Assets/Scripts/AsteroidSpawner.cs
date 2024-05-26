@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class AsteroidSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject asteroidPrefab;
+    [SerializeField] private GameObject[] asteroidPrefabs;
 
     [SerializeField] private float spawnTimerMin;
     [SerializeField] private float spawnTimerMax;
@@ -40,6 +40,9 @@ public class AsteroidSpawner : MonoBehaviour
 
     private void SpawnAsteroid()
     {
+
+        GameObject asteroidPrefab = asteroidPrefabs[Random.Range(0, asteroidPrefabs.Length)];
+
         // find random point in spawnbox collider
         Vector2 spawnPos = new Vector2(Random.Range(boundMin.x, boundMax.x),
                                         Random.Range(boundMin.y, boundMax.y));
