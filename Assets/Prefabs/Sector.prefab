@@ -267,11 +267,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 4448841341539474226}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -75, y: 50}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 1, y: 0.5}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -25.649963, y: -17.100006}
+  m_SizeDelta: {x: 74.35, y: 57.25}
+  m_Pivot: {x: 1, y: 1}
 --- !u!222 &6361194839784188340
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -327,10 +327,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
+  m_fontSize: 51.2
   m_fontSizeBase: 70
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -568,6 +568,22 @@ PrefabInstance:
     - target: {fileID: 514962752639564185, guid: a2df0ef426ba02f449a5b94f94eeabb7, type: 3}
       propertyPath: m_Name
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 5313795130767176739, guid: a2df0ef426ba02f449a5b94f94eeabb7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644514469765193089, guid: a2df0ef426ba02f449a5b94f94eeabb7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6633496513605863795, guid: a2df0ef426ba02f449a5b94f94eeabb7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7816357594291655088, guid: a2df0ef426ba02f449a5b94f94eeabb7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
