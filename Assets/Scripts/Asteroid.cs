@@ -7,7 +7,7 @@ public class Asteroid : MonoBehaviour
     [SerializeField] private ParticleSystem groundHitVFX;
 
 
-    public event Action<Asteroid> OnTargetDestroyed;
+    public event Action<Asteroid> OnAsteroidExplode;
 
     // cache
     Transform vfxParent;
@@ -48,12 +48,8 @@ public class Asteroid : MonoBehaviour
             Helpers.ChangeLayersRecursively(explodeGO, gameObject.layer);
 
         }
+        OnAsteroidExplode?.Invoke(this);
         gameObject.SetActive(false);
-    }
-
-    private void OnDestroy()
-    {
-        OnTargetDestroyed?.Invoke(this);
     }
 
     public void ShotDown()

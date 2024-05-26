@@ -35,7 +35,7 @@ public class Cannon : MonoBehaviour
         if (!targets.Contains(target))
         {
             targets.Add(target);
-            target.OnTargetDestroyed += OnCurrentTargetDestroyed;
+            target.OnAsteroidExplode += OnCurrentTargetDestroyed;
         }
     }
 

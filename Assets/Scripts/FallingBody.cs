@@ -17,8 +17,7 @@ public class FallingBody : MonoBehaviour
 
     private void Start()
     {
-        fallingSpeed = UnityEngine.Random.Range(fallingSpeedMax, fallingSpeedMin);
-
+        fallingSpeed = UnityEngine.Random.Range(fallingSpeedMin, fallingSpeedMax);
         // assign random start to noise so even asteroids with the same noise level move differently
         currentXNoisePosition = new Vector2(Random.Range(0f, 1f), Random.Range(0f, 1f));
     }
@@ -52,7 +51,7 @@ public class FallingBody : MonoBehaviour
         noiseX = Mathf.Clamp(noiseX, 0f, 1f);
         noiseY = Mathf.Clamp(noiseY, 0f, 1f);
 
-        noiseX = Helpers.Remap(noiseY, 0f, 1f, -1f, 1f);
+        noiseX = Helpers.Remap(noiseX, 0f, 1f, -1f, 1f);
         noiseY = Helpers.Remap(noiseY, 0f, 1f, -1f, 1f);
 
 
