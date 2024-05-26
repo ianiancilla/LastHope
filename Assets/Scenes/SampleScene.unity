@@ -211,6 +211,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 3158928801419956279, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: m_Layer
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3163065289322348093, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
       value: 20
@@ -246,6 +250,14 @@ PrefabInstance:
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: L
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: F
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: RB
       objectReference: {fileID: 0}
     - target: {fileID: 4662387296539087690, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -388,6 +400,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 3158928801419956279, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 3163065289322348093, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
       value: 15
@@ -423,6 +439,14 @@ PrefabInstance:
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: "gi\xF9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: R
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: right
       objectReference: {fileID: 0}
     - target: {fileID: 4662387296539087690, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -565,6 +589,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 3158928801419956279, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3163065289322348093, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
       value: 11
@@ -600,6 +628,14 @@ PrefabInstance:
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: B
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: X
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: down
       objectReference: {fileID: 0}
     - target: {fileID: 4662387296539087690, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -870,6 +906,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 3158928801419956279, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 3163065289322348093, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
       value: 16
@@ -901,6 +941,14 @@ PrefabInstance:
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: sx
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: S
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: Y
       objectReference: {fileID: 0}
     - target: {fileID: 4662387296539087690, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -1234,13 +1282,49 @@ MonoBehaviour:
         m_CallState: 2
   ShootEventSector9:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 601789270}
+        m_TargetAssemblyTypeName: Sector, Assembly-CSharp
+        m_MethodName: Shoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   ShootEventSector10:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 750271575}
+        m_TargetAssemblyTypeName: Sector, Assembly-CSharp
+        m_MethodName: Shoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   ShootEventSector11:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 430473966}
+        m_TargetAssemblyTypeName: Sector, Assembly-CSharp
+        m_MethodName: Shoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &972697509
 Transform:
   m_ObjectHideFlags: 0
@@ -1384,6 +1468,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 3158928801419956279, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 3163065289322348093, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -1419,6 +1507,14 @@ PrefabInstance:
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: X
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: V
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: A
       objectReference: {fileID: 0}
     - target: {fileID: 4662387296539087690, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -1593,6 +1689,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 3158928801419956279, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 3163065289322348093, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
       value: 14
@@ -1628,6 +1728,14 @@ PrefabInstance:
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: dx
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: A
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: up
       objectReference: {fileID: 0}
     - target: {fileID: 4662387296539087690, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -1775,6 +1883,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 3158928801419956279, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 3163065289322348093, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
       value: 21
@@ -1810,6 +1922,14 @@ PrefabInstance:
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: L
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: P
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: RT
       objectReference: {fileID: 0}
     - target: {fileID: 4662387296539087690, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -1952,6 +2072,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 3158928801419956279, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3163065289322348093, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
       value: 12
@@ -1987,6 +2111,14 @@ PrefabInstance:
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: Y
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: C
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: X
       objectReference: {fileID: 0}
     - target: {fileID: 4662387296539087690, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -2129,6 +2261,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 3158928801419956279, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: m_Layer
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 3163065289322348093, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
       value: 18
@@ -2164,6 +2300,14 @@ PrefabInstance:
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: L
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: Q
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: LT
       objectReference: {fileID: 0}
     - target: {fileID: 4662387296539087690, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -2416,6 +2560,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 3158928801419956279, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 3163065289322348093, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
       value: 17
@@ -2451,6 +2599,14 @@ PrefabInstance:
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: su
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: T
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: B
       objectReference: {fileID: 0}
     - target: {fileID: 4662387296539087690, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -2608,6 +2764,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 3158928801419956279, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: m_Layer
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 3163065289322348093, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
       value: 19
@@ -2643,6 +2803,14 @@ PrefabInstance:
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: L
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: W
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: LB
       objectReference: {fileID: 0}
     - target: {fileID: 4662387296539087690, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -2863,11 +3031,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorKBButtonAsString
-      value: A
+      value: Z
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorPadButtonAsString
-      value: A
+      value: left
       objectReference: {fileID: 0}
     - target: {fileID: 4885700099979033557, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Name
