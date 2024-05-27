@@ -16,6 +16,7 @@ public class Sector : MonoBehaviour
 
     [Header("General Sector Settings (should be applied to prefab always!)")]
     [Tooltip("Seconds before screen goes blank after destruction")]
+    [SerializeField] float evacTime = 2f;
     [SerializeField] float interferenceDelay = 0.8f;
 
 
@@ -26,6 +27,8 @@ public class Sector : MonoBehaviour
     [SerializeField] Volume postProcessingVolume;
     [SerializeField] GameObject[] objectsToDisableOnSectorInactive;
     [SerializeField] GameObject interferencePanel;
+    [SerializeField] GameObject successfulEvacuationPanel;
+
     [field: SerializeField] public Transform VFXParent { get; private set; }
 
     // members
@@ -35,12 +38,16 @@ public class Sector : MonoBehaviour
     private string sectorButtonAsString;
     private int maxHealth = 2;
     private int currentHealth;
+    private float evacElapsedTime = 0f;
+    private bool isKilled = false;
 
     // events
     public event Action OnSectorHit;
     public event Action OnSectorDestroyed;
     public event Action OnCannonShoot;
     public event Action OnCannonLoaded;
+    public event Action OnSuccessfulEvac;
+
 
     private void Start()
     {
@@ -48,6 +55,11 @@ public class Sector : MonoBehaviour
         SetSectorColor();
         SetButtonText();
         currentHealth = maxHealth;
+    }
+
+    private void OnEnable()
+    {
+        StartCoroutine(EvacProgress());
     }
 
     private void SetButtonText()
@@ -119,15 +131,20 @@ public class Sector : MonoBehaviour
     private void SectorKilled()
     {
         //Debug.Log($"Sector {gameObject.name} destroyed");
-        StartCoroutine(KillSectroAfterDelay());
-
+        isKilled = true;
         OnSectorDestroyed?.Invoke();
+        StartCoroutine(KillSectroAfterDelay());
     }
 
     IEnumerator KillSectroAfterDelay()
     {
         yield return new WaitForSeconds(interferenceDelay);
 
+        TurnOffMonitor();
+    }
+
+    private void TurnOffMonitor()
+    {
         foreach (GameObject gameObject in objectsToDisableOnSectorInactive)
         {
             gameObject.SetActive(false);
@@ -144,4 +161,27 @@ public class Sector : MonoBehaviour
         interferencePanel.gameObject.SetActive(true);
     }
 
+    IEnumerator EvacProgress()
+    {
+        while (evacElapsedTime < evacTime && !isKilled)
+        {
+            evacElapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        if (!isKilled) { EvacSuccess(); }
+    }
+
+    public float GetEvacState()
+    {
+        return evacElapsedTime / evacTime;
+    }
+
+    private void EvacSuccess()
+    {
+        OnSuccessfulEvac?.Invoke();
+        Debug.Log($"Successfully evacuated {this.gameObject.name}");
+        TurnOffMonitor();
+        successfulEvacuationPanel.gameObject.SetActive(true);
+    }
 }
