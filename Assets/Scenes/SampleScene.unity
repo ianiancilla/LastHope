@@ -446,7 +446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorPadButtonAsString
-      value: right
+      value: "\u2192"
       objectReference: {fileID: 0}
     - target: {fileID: 4662387296539087690, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -635,7 +635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorPadButtonAsString
-      value: down
+      value: "\u2193"
       objectReference: {fileID: 0}
     - target: {fileID: 4662387296539087690, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -1735,7 +1735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorPadButtonAsString
-      value: up
+      value: "\u2191"
       objectReference: {fileID: 0}
     - target: {fileID: 4662387296539087690, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -3035,7 +3035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorPadButtonAsString
-      value: left
+      value: "\u2190"
       objectReference: {fileID: 0}
     - target: {fileID: 4885700099979033557, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Name
