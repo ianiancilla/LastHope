@@ -3,16 +3,19 @@ using TMPro;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
+[ExecuteAlways]
 public class Sector : MonoBehaviour
 {
     [SerializeField] [Range(0, 11)] int sectorNumber;
-    [SerializeField] string sectorButtonAsString;
+    [SerializeField] string sectorPadButtonAsString;
+    [SerializeField] string sectorKBButtonAsString;
     [SerializeField] private Color sectorColor;
 
     // members
     private int layer;
     private LayerMask layerMask;
     private const int SECTOR_TO_LAYER_OFFSET = 10;
+    private string sectorButtonAsString;
 
     // cache
     [SerializeField] Cannon myCannon;
@@ -25,6 +28,21 @@ public class Sector : MonoBehaviour
     {
         SetEverythingToSectorLayer();
         SetSectorColor();
+
+        SetButtonText();
+    }
+
+    private void SetButtonText()
+    {
+        if (FindFirstObjectByType<SceneSettings>().activeControlScheme == ControlScheme.gamepad)
+        {
+            sectorButtonAsString = sectorPadButtonAsString;
+        }
+        else
+        {
+            sectorButtonAsString = sectorKBButtonAsString;
+        }
+
         inputButtonUI.text = sectorButtonAsString;
     }
 
