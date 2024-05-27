@@ -3,14 +3,29 @@ using TMPro;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using System;
+using System.Collections;
 
 //[ExecuteAlways] // activate when you want to reflect any new edits in the scene
 public class Sector : MonoBehaviour
 {
+    [Header("This Sector Settings")]
     [SerializeField] [Range(0, 11)] int sectorNumber;
     [SerializeField] string sectorPadButtonAsString;
     [SerializeField] string sectorKBButtonAsString;
     [SerializeField] private Color sectorColor;
+
+    [Header("General Sector Settings")]
+    [Tooltip("Seconds before screen goes blank after destruction")]
+    [SerializeField] float interferenceDelay = 0.8f;
+
+
+    [Header("Cache")]
+    [SerializeField] Cannon myCannon;
+    [SerializeField] Camera myCamera;
+    [SerializeField] TMP_Text inputButtonUI;
+    [SerializeField] Volume postProcessingVolume;
+    [SerializeField] GameObject[] objectsToDisableOnSectorInactive;
+    [SerializeField] GameObject interferencePanel;
 
     // members
     private int layer;
@@ -19,13 +34,6 @@ public class Sector : MonoBehaviour
     private string sectorButtonAsString;
     private int maxHealth = 2;
     private int currentHealth;
-
-
-    // cache
-    [SerializeField] Cannon myCannon;
-    [SerializeField] Camera myCamera;
-    [SerializeField] TMP_Text inputButtonUI;
-    [SerializeField] Volume postProcessingVolume;
 
     // events
     public event Action OnSectorHit;
@@ -110,7 +118,24 @@ public class Sector : MonoBehaviour
     private void SectorDestroyed()
     {
         //Debug.Log($"Sector {gameObject.name} destroyed");
+        StartCoroutine(TurnOffMonitor());
+
         OnSectorDestroyed?.Invoke();
+    }
+
+    IEnumerator TurnOffMonitor()
+    {
+        yield return new WaitForSeconds(interferenceDelay);
+
+        foreach (GameObject gameObject in objectsToDisableOnSectorInactive)
+        {
+            gameObject.SetActive(false);
+        }
+
+        postProcessingVolume.profile.TryGet<ColorAdjustments>(out ColorAdjustments colorAdjustments);
+        colorAdjustments.colorFilter.value = Color.white;
+
+        interferencePanel.gameObject.SetActive(true);
     }
 
 }

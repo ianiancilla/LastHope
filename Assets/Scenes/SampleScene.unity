@@ -3061,6 +3061,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1674549927952809398, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3163065289322348093, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -3108,10 +3112,6 @@ PrefabInstance:
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.23496689
-      objectReference: {fileID: 0}
-    - target: {fileID: 7683294145349604033, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8187244519662794552, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
