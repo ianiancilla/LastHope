@@ -428,6 +428,7 @@ Transform:
   - {fileID: 1618469825407731792}
   - {fileID: 4448841341539474226}
   - {fileID: 5755343096860678832}
+  - {fileID: 1740023240189990161}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4358716847029700649
@@ -446,6 +447,7 @@ MonoBehaviour:
   sectorPadButtonAsString: 
   sectorKBButtonAsString: 
   sectorColor: {r: 0.7902375, g: 1, b: 0.4198113, a: 1}
+  interferenceDelay: 1
   myCannon: {fileID: 6762839198587481819}
   myCamera: {fileID: 5833362562736743568}
   inputButtonUI: {fileID: 563404956035915699}
@@ -455,6 +457,7 @@ MonoBehaviour:
   - {fileID: 7481202364069163799}
   - {fileID: 5261749421411554486}
   interferencePanel: {fileID: 5214135484749274059}
+  <VFXParent>k__BackingField: {fileID: 1740023240189990161}
 --- !u!1 &5159403025606892246
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,6 +669,37 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &8726969888878870388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1740023240189990161}
+  m_Layer: 10
+  m_Name: VFX parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1740023240189990161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8726969888878870388}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1410737720882022041}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &802627867687028238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -976,6 +1010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AsteroidSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 5382810788601055588, guid: a8e59ab12eb6bbd459e54259e74eabd6, type: 3}
+      propertyPath: mySector
+      value: 
+      objectReference: {fileID: 4358716847029700649}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -6,16 +6,12 @@ public class Asteroid : MonoBehaviour
     [SerializeField] private ParticleSystem explodeVFX;
     [SerializeField] private ParticleSystem groundHitVFX;
 
+    [Header("Cache")]
+    [SerializeField] private Sector mySector;
+    public void SetSector(Sector sector) { mySector = sector; }
 
+    //events
     public event Action<Asteroid> OnAsteroidExplode;
-
-    // cache
-    Transform vfxParent;
-
-    private void Start()
-    {
-        vfxParent = GameObject.Find("VFXParent").transform;
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -30,7 +26,7 @@ public class Asteroid : MonoBehaviour
         ground.HitByAsteroid();
         if (groundHitVFX != null) 
         {
-            GameObject groundHitGO = Instantiate(groundHitVFX, transform.position, Quaternion.identity, vfxParent).gameObject;
+            GameObject groundHitGO = Instantiate(groundHitVFX, transform.position, Quaternion.identity, mySector.VFXParent).gameObject;
 
             // spawns need to be on the same sector layer, for both collisions and camera culling
             Helpers.ChangeLayersRecursively(groundHitGO, gameObject.layer);
@@ -43,7 +39,7 @@ public class Asteroid : MonoBehaviour
     {
         if (explodeVFX != null)
         {
-            GameObject explodeGO = Instantiate(explodeVFX, transform.position, Quaternion.identity, vfxParent).gameObject;
+            GameObject explodeGO = Instantiate(explodeVFX, transform.position, Quaternion.identity, mySector.VFXParent).gameObject;
             // spawns need to be on the same sector layer, for both collisions and camera culling
             Helpers.ChangeLayersRecursively(explodeGO, gameObject.layer);
 

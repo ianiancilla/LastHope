@@ -14,7 +14,7 @@ public class Sector : MonoBehaviour
     [SerializeField] string sectorKBButtonAsString;
     [SerializeField] private Color sectorColor;
 
-    [Header("General Sector Settings")]
+    [Header("General Sector Settings (should be applied to prefab always!)")]
     [Tooltip("Seconds before screen goes blank after destruction")]
     [SerializeField] float interferenceDelay = 0.8f;
 
@@ -26,6 +26,7 @@ public class Sector : MonoBehaviour
     [SerializeField] Volume postProcessingVolume;
     [SerializeField] GameObject[] objectsToDisableOnSectorInactive;
     [SerializeField] GameObject interferencePanel;
+    [field: SerializeField] public Transform VFXParent { get; private set; }
 
     // members
     private int layer;
@@ -109,27 +110,32 @@ public class Sector : MonoBehaviour
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            SectorDestroyed();
+            SectorKilled();
             return;
         }
         OnSectorHit?.Invoke();
     }
 
-    private void SectorDestroyed()
+    private void SectorKilled()
     {
         //Debug.Log($"Sector {gameObject.name} destroyed");
-        StartCoroutine(TurnOffMonitor());
+        StartCoroutine(KillSectroAfterDelay());
 
         OnSectorDestroyed?.Invoke();
     }
 
-    IEnumerator TurnOffMonitor()
+    IEnumerator KillSectroAfterDelay()
     {
         yield return new WaitForSeconds(interferenceDelay);
 
         foreach (GameObject gameObject in objectsToDisableOnSectorInactive)
         {
             gameObject.SetActive(false);
+        }
+
+        foreach (Transform child in VFXParent)
+        {
+            Destroy(child.gameObject);
         }
 
         postProcessingVolume.profile.TryGet<ColorAdjustments>(out ColorAdjustments colorAdjustments);
