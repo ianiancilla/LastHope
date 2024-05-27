@@ -3109,6 +3109,10 @@ PrefabInstance:
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.23496689
       objectReference: {fileID: 0}
+    - target: {fileID: 7683294145349604033, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8187244519662794552, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
       value: 10
