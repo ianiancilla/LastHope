@@ -4,12 +4,14 @@ using System;
 
 public class Cannon : MonoBehaviour
 {
-    [SerializeField] Transform cannonSprite;
-    [SerializeField] Transform projectileOrigin;
     [SerializeField] float aimingSpeed = 5f;
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] float reloadTime;
 
+    // cache
+    [SerializeField] Transform cannonSprite;
+    [SerializeField] Transform projectileOrigin;
+    [SerializeField] Sector mySector;
 
     private Asteroid currentTarget;
     private List<Asteroid> targets = new List<Asteroid>();
@@ -44,6 +46,7 @@ public class Cannon : MonoBehaviour
         targets.Remove(target);
         currentTarget = null;
     }
+    
     private void UpdateCurrentTarget()
     {
         float targetDistanceFromGround = Mathf.Infinity;
@@ -56,6 +59,7 @@ public class Cannon : MonoBehaviour
             }
         }
     }
+    
     private void Aim()
     {
         if (currentTarget == null) { return; }
@@ -93,6 +97,10 @@ public class Cannon : MonoBehaviour
     private void Reload()
     {
         reloadTimer -= Time.deltaTime;
-        if (reloadTimer < 0) { isLoaded = true; }
+        if (reloadTimer < 0) 
+        { 
+            isLoaded = true;
+            mySector.CannonLoaded();
+        }
     }
 }

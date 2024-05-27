@@ -2,8 +2,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using System;
 
-[ExecuteAlways]
+//[ExecuteAlways] // activate when you want to reflect any new edits in the scene
 public class Sector : MonoBehaviour
 {
     [SerializeField] [Range(0, 11)] int sectorNumber;
@@ -16,6 +17,9 @@ public class Sector : MonoBehaviour
     private LayerMask layerMask;
     private const int SECTOR_TO_LAYER_OFFSET = 10;
     private string sectorButtonAsString;
+    private int maxHealth = 2;
+    private int currentHealth;
+
 
     // cache
     [SerializeField] Cannon myCannon;
@@ -23,13 +27,18 @@ public class Sector : MonoBehaviour
     [SerializeField] TMP_Text inputButtonUI;
     [SerializeField] Volume postProcessingVolume;
 
+    // events
+    public event Action OnSectorHit;
+    public event Action OnSectorDestroyed;
+    public event Action OnCannonShoot;
+    public event Action OnCannonLoaded;
 
     private void Start()
     {
         SetEverythingToSectorLayer();
         SetSectorColor();
-
         SetButtonText();
+        currentHealth = maxHealth;
     }
 
     private void SetButtonText()
@@ -63,11 +72,6 @@ public class Sector : MonoBehaviour
         Helpers.ChangeLayersRecursively(this.gameObject, layer);
     }
 
-    public void Shoot()
-    {
-        myCannon.Shoot();
-    }
-
     private void SetSectorColor()
     {
         postProcessingVolume.profile.TryGet<ColorAdjustments>(out ColorAdjustments colorAdjustments);
@@ -78,4 +82,35 @@ public class Sector : MonoBehaviour
     {
         myCamera.rect = new Rect(x, y, w, h);
     }
+
+    public void Shoot()
+    {
+        myCannon.Shoot();
+        OnCannonShoot?.Invoke();
+    }
+
+    public void CannonLoaded()
+    {
+        OnCannonLoaded?.Invoke();
+    }
+   
+    public void TakeDamage()
+    {
+        //Debug.Log($"Sector {gameObject.name} hit");
+        currentHealth -= 1;
+        if (currentHealth <= 0)
+        {
+            currentHealth = 0;
+            SectorDestroyed();
+            return;
+        }
+        OnSectorHit?.Invoke();
+    }
+
+    private void SectorDestroyed()
+    {
+        //Debug.Log($"Sector {gameObject.name} destroyed");
+        OnSectorDestroyed?.Invoke();
+    }
+
 }

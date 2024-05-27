@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 852741794144429742}
   - component: {fileID: 3567206244005515519}
   - component: {fileID: 6525535394196860568}
+  - component: {fileID: 6173368013848746910}
   m_Layer: 10
   m_Name: Sector Camera
   m_TagString: MainCamera
@@ -128,3 +129,84 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &6173368013848746910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4807533481698599616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d122ec2fd9faa2140837ffbb956b4e26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smallShakeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.4132321
+      outSlope: 0.4132321
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.12548506
+      value: 0.051854454
+      inSlope: -0.09074509
+      outSlope: -0.09074509
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.068639755
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.059295103
+      outSlope: -0.059295103
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  smallShakeDuration: 0.2
+  largeShakeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1.5969464
+      outSlope: 1.5969464
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.15901467
+      value: 0.2539379
+      inSlope: -0.5559404
+      outSlope: -0.5559404
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.36709777
+      outWeight: 0.23276944
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.30195284
+      outSlope: -0.30195284
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  largeShakeDuration: 0.5
+  mySector: {fileID: 0}

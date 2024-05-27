@@ -561,6 +561,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cannon
       objectReference: {fileID: 0}
+    - target: {fileID: 6267303829162977493, guid: 27b94a85477ed75428120c15f2d71bf8, type: 3}
+      propertyPath: mySector
+      value: 
+      objectReference: {fileID: 4358716847029700649}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -739,6 +743,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8910740460364868278, guid: a2df0ef426ba02f449a5b94f94eeabb7, type: 3}
+      propertyPath: mySector
+      value: 
+      objectReference: {fileID: 4358716847029700649}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -883,6 +891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sector Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 6173368013848746910, guid: ccbee73eadcb2cf41b5568aee8a52cf1, type: 3}
+      propertyPath: mySector
+      value: 
+      objectReference: {fileID: 4358716847029700649}
     - target: {fileID: 6525535394196860568, guid: ccbee73eadcb2cf41b5568aee8a52cf1, type: 3}
       propertyPath: m_VolumeLayerMask.m_Bits
       value: 1024
