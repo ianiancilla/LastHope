@@ -28,6 +28,8 @@ public class Sector : MonoBehaviour
     [SerializeField] GameObject[] objectsToDisableOnSectorInactive;
     [SerializeField] GameObject interferencePanel;
     [SerializeField] GameObject successfulEvacuationPanel;
+    [SerializeField] GameObject panelCannonLoaded;
+
 
     [field: SerializeField] public Transform VFXParent { get; private set; }
 
@@ -107,12 +109,14 @@ public class Sector : MonoBehaviour
     public void Shoot()
     {
         myCannon.Shoot();
+        panelCannonLoaded.SetActive(false);
         OnCannonShoot?.Invoke();
     }
 
     public void CannonLoaded()
     {
         OnCannonLoaded?.Invoke();
+        panelCannonLoaded.SetActive(true);
     }
    
     public void TakeDamage()
