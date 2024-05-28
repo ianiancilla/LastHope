@@ -47,6 +47,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroidPrefabs:
   - {fileID: 2120909499865829985, guid: 6d7df690d9ac3c04893f6c76b4a0cb95, type: 3}
+  - {fileID: 2120909499865829985, guid: 919c5d91131b1e34fa6c6cde5a2cbcfc, type: 3}
+  - {fileID: 2120909499865829985, guid: 891cc661192dc2e47a4ad43970e42f9b, type: 3}
+  - {fileID: 2120909499865829985, guid: 2819fd66b7f03024bafad352af7488c6, type: 3}
+  - {fileID: 2120909499865829985, guid: 61e67f432e2858d418df414fdfd850b8, type: 3}
   - {fileID: 7800710689615407709, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
   maxAsteroidsOnScreen: 2
   spawnTimerMin: 2
