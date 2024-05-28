@@ -8,6 +8,10 @@ public class AsteroidSpawner : MonoBehaviour
     [SerializeField] private float spawnTimerMin;
     [SerializeField] private float spawnTimerMax;
 
+    [Header("Cache")]
+    [SerializeField] private Sector mySector;
+
+
     // cache
     BoxCollider2D boxCollider;
 
@@ -89,6 +93,8 @@ public class AsteroidSpawner : MonoBehaviour
                                             spawnPos, 
                                             Quaternion.identity, 
                                             this.transform);
+
+            asteroidPool[i].GetComponent<Asteroid>().SetSector(mySector);
 
             // asteroids need to be on the same sector layer,
             // for both collisions and camera culling

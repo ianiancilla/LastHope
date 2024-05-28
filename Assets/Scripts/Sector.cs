@@ -2,34 +2,66 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using System;
+using System.Collections;
 
-[ExecuteAlways]
+//[ExecuteAlways] // activate when you want to reflect any new edits in the scene
 public class Sector : MonoBehaviour
 {
+    [Header("This Sector Settings")]
     [SerializeField] [Range(0, 11)] int sectorNumber;
     [SerializeField] string sectorPadButtonAsString;
     [SerializeField] string sectorKBButtonAsString;
     [SerializeField] private Color sectorColor;
+
+    [Header("General Sector Settings (should be applied to prefab always!)")]
+    [Tooltip("Seconds before screen goes blank after destruction")]
+    [SerializeField] float evacTime = 2f;
+    [SerializeField] float interferenceDelay = 0.8f;
+
+
+    [Header("Cache")]
+    [SerializeField] Cannon myCannon;
+    [SerializeField] Camera myCamera;
+    [SerializeField] TMP_Text inputButtonUI;
+    [SerializeField] Volume postProcessingVolume;
+    [SerializeField] GameObject[] objectsToDisableOnSectorInactive;
+    [SerializeField] GameObject interferencePanel;
+    [SerializeField] GameObject successfulEvacuationPanel;
+    [SerializeField] GameObject panelCannonLoaded;
+
+
+    [field: SerializeField] public Transform VFXParent { get; private set; }
 
     // members
     private int layer;
     private LayerMask layerMask;
     private const int SECTOR_TO_LAYER_OFFSET = 10;
     private string sectorButtonAsString;
+    private int maxHealth = 2;
+    private int currentHealth;
+    private float evacElapsedTime = 0f;
+    private bool isKilled = false;
 
-    // cache
-    [SerializeField] Cannon myCannon;
-    [SerializeField] Camera myCamera;
-    [SerializeField] TMP_Text inputButtonUI;
-    [SerializeField] Volume postProcessingVolume;
+    // events
+    public event Action OnSectorHit;
+    public event Action OnSectorDestroyed;
+    public event Action OnCannonShoot;
+    public event Action OnCannonLoaded;
+    public event Action OnSuccessfulEvac;
 
 
     private void Start()
     {
         SetEverythingToSectorLayer();
         SetSectorColor();
-
         SetButtonText();
+        currentHealth = maxHealth;
+    }
+
+    private void OnEnable()
+    {
+        StartCoroutine(EvacProgress());
     }
 
     private void SetButtonText()
@@ -63,11 +95,6 @@ public class Sector : MonoBehaviour
         Helpers.ChangeLayersRecursively(this.gameObject, layer);
     }
 
-    public void Shoot()
-    {
-        myCannon.Shoot();
-    }
-
     private void SetSectorColor()
     {
         postProcessingVolume.profile.TryGet<ColorAdjustments>(out ColorAdjustments colorAdjustments);
@@ -77,5 +104,88 @@ public class Sector : MonoBehaviour
     public void SetCameraViewportRect(float x, float y, float w, float h)
     {
         myCamera.rect = new Rect(x, y, w, h);
+    }
+
+    public void Shoot()
+    {
+        myCannon.Shoot();
+        panelCannonLoaded.SetActive(false);
+        OnCannonShoot?.Invoke();
+    }
+
+    public void CannonLoaded()
+    {
+        OnCannonLoaded?.Invoke();
+        panelCannonLoaded.SetActive(true);
+    }
+   
+    public void TakeDamage()
+    {
+        //Debug.Log($"Sector {gameObject.name} hit");
+        currentHealth -= 1;
+        if (currentHealth <= 0)
+        {
+            currentHealth = 0;
+            SectorKilled();
+            return;
+        }
+        OnSectorHit?.Invoke();
+    }
+
+    private void SectorKilled()
+    {
+        //Debug.Log($"Sector {gameObject.name} destroyed");
+        isKilled = true;
+        OnSectorDestroyed?.Invoke();
+        StartCoroutine(KillSectroAfterDelay());
+    }
+
+    IEnumerator KillSectroAfterDelay()
+    {
+        yield return new WaitForSeconds(interferenceDelay);
+
+        TurnOffMonitor();
+    }
+
+    private void TurnOffMonitor()
+    {
+        foreach (GameObject gameObject in objectsToDisableOnSectorInactive)
+        {
+            gameObject.SetActive(false);
+        }
+
+        foreach (Transform child in VFXParent)
+        {
+            Destroy(child.gameObject);
+        }
+
+        postProcessingVolume.profile.TryGet<ColorAdjustments>(out ColorAdjustments colorAdjustments);
+        colorAdjustments.colorFilter.value = Color.white;
+
+        interferencePanel.gameObject.SetActive(true);
+    }
+
+    IEnumerator EvacProgress()
+    {
+        while (evacElapsedTime < evacTime && !isKilled)
+        {
+            evacElapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        if (!isKilled) { EvacSuccess(); }
+    }
+
+    public float GetEvacState()
+    {
+        return evacElapsedTime / evacTime;
+    }
+
+    private void EvacSuccess()
+    {
+        OnSuccessfulEvac?.Invoke();
+        Debug.Log($"Successfully evacuated {this.gameObject.name}");
+        TurnOffMonitor();
+        successfulEvacuationPanel.gameObject.SetActive(true);
     }
 }
