@@ -16,7 +16,7 @@ public class Sector : MonoBehaviour
 
     [Header("General Sector Settings (should be applied to prefab always!)")]
     [Tooltip("Seconds before screen goes blank after destruction")]
-    [SerializeField] float evacTime = 2f;
+    [SerializeField] float evacTimePerPerson = 0.1f;
     [SerializeField] float interferenceDelay = 0.8f;
 
 
@@ -41,14 +41,19 @@ public class Sector : MonoBehaviour
     private int maxHealth = 2;
     private int currentHealth;
     private float evacElapsedTime = 0f;
+    private bool isEvacuated = false;
     private bool isKilled = false;
+    private int peopleInSector = 100;
+    private float evacTime;
 
     // events
     public event Action OnSectorHit;
-    public event Action OnSectorDestroyed;
+    public event Action OnSectorKilled;
+    public static event Action<int> OnAnySectorKilled;
     public event Action OnCannonShoot;
     public event Action OnCannonLoaded;
-    public event Action OnSuccessfulEvac;
+    public event Action OnSectorEvac;
+    public static event Action<int> OnAnySectorEvac;
 
 
     private void Start()
@@ -61,6 +66,8 @@ public class Sector : MonoBehaviour
 
     private void OnEnable()
     {
+        evacTime = evacTimePerPerson * peopleInSector;
+
         StartCoroutine(EvacProgress());
     }
 
@@ -121,6 +128,7 @@ public class Sector : MonoBehaviour
    
     public void TakeDamage()
     {
+        if (isEvacuated || isKilled) { return; }
         //Debug.Log($"Sector {gameObject.name} hit");
         currentHealth -= 1;
         if (currentHealth <= 0)
@@ -136,7 +144,8 @@ public class Sector : MonoBehaviour
     {
         //Debug.Log($"Sector {gameObject.name} destroyed");
         isKilled = true;
-        OnSectorDestroyed?.Invoke();
+        OnSectorKilled?.Invoke();
+        OnAnySectorKilled?.Invoke(peopleInSector);
         StartCoroutine(KillSectroAfterDelay());
     }
 
@@ -183,7 +192,11 @@ public class Sector : MonoBehaviour
 
     private void EvacSuccess()
     {
-        OnSuccessfulEvac?.Invoke();
+        OnSectorEvac?.Invoke();
+        OnAnySectorEvac?.Invoke(peopleInSector);
+
+        isEvacuated = true;
+
         Debug.Log($"Successfully evacuated {this.gameObject.name}");
         TurnOffMonitor();
         successfulEvacuationPanel.gameObject.SetActive(true);

@@ -14,13 +14,13 @@ public class CameraShake : MonoBehaviour
     {
         mySector.OnCannonShoot += SmallShake;
         mySector.OnSectorHit += LargeShake;
-        mySector.OnSectorDestroyed += LargeShake;
+        mySector.OnSectorKilled += LargeShake;
     }
 
     public void OnDisable()
     {
         mySector.OnCannonShoot -= SmallShake;
-        mySector.OnSectorDestroyed -= LargeShake;
+        mySector.OnSectorKilled -= LargeShake;
     }
 
     IEnumerator Shake (AnimationCurve curve, float duration)
@@ -47,6 +47,5 @@ public class CameraShake : MonoBehaviour
     {
         StartCoroutine(Shake(largeShakeCurve, largeShakeDuration));
     }
-
 
 }

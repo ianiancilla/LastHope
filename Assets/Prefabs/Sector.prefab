@@ -789,7 +789,7 @@ MonoBehaviour:
   sectorPadButtonAsString: 
   sectorKBButtonAsString: 
   sectorColor: {r: 0.7902375, g: 1, b: 0.4198113, a: 1}
-  evacTime: 20
+  evacTimePerPerson: 0.2
   interferenceDelay: 1
   myCannon: {fileID: 6762839198587481819}
   myCamera: {fileID: 5833362562736743568}
