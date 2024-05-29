@@ -292,8 +292,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 14.999939, y: 0}
-  m_SizeDelta: {x: -30.000067, y: 50}
+  m_AnchoredPosition: {x: 0, y: -4}
+  m_SizeDelta: {x: -60, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &249275891
 MonoBehaviour:
@@ -587,6 +587,10 @@ PrefabInstance:
       value: 0.8624542
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorManager
+      value: 
+      objectReference: {fileID: 972622802}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: L
       objectReference: {fileID: 0}
@@ -612,7 +616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4885700099979033557, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5159403025606892246, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -628,19 +632,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.50756216
+      value: 0.5076617
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.7299338
+      value: 0.72331125
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.2237811
+      value: 0.21383084
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.23496689
+      value: 0.23165563
       objectReference: {fileID: 0}
     - target: {fileID: 7481202364069163799, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -780,6 +784,10 @@ PrefabInstance:
       value: 0.41960788
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorManager
+      value: 
+      objectReference: {fileID: 972622802}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: "gi\xF9"
       objectReference: {fileID: 0}
@@ -805,7 +813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4885700099979033557, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5159403025606892246, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -821,19 +829,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.2637811
+      value: 0.27383083
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.47496688
+      value: 0.47165564
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.2237811
+      value: 0.21383084
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.23496689
+      value: 0.23165563
       objectReference: {fileID: 0}
     - target: {fileID: 7481202364069163799, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -973,6 +981,10 @@ PrefabInstance:
       value: 0.41960788
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorManager
+      value: 
+      objectReference: {fileID: 972622802}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: B
       objectReference: {fileID: 0}
@@ -998,7 +1010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4885700099979033557, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5159403025606892246, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -1014,7 +1026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.2637811
+      value: 0.27383083
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -1022,11 +1034,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.2237811
+      value: 0.21383084
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.23496689
+      value: 0.23165563
       objectReference: {fileID: 0}
     - target: {fileID: 7481202364069163799, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -1334,6 +1346,10 @@ PrefabInstance:
       value: 0.41960788
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorManager
+      value: 
+      objectReference: {fileID: 972622802}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: sx
       objectReference: {fileID: 0}
@@ -1359,7 +1375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4885700099979033557, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5159403025606892246, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -1375,19 +1391,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.50756216
+      value: 0.5076617
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.47496688
+      value: 0.47165564
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.2237811
+      value: 0.21383084
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.23496689
+      value: 0.23165563
       objectReference: {fileID: 0}
     - target: {fileID: 7481202364069163799, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -1484,6 +1500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 972622800}
+  - component: {fileID: 972622802}
   - component: {fileID: 972622801}
   m_Layer: 0
   m_Name: Sectors
@@ -1535,8 +1552,21 @@ MonoBehaviour:
   cameraColumns: 4
   cameraPadding: 0.02
   bottomMargin: 0.2
-  topMargin: 0.01
-  sectors:
+  topMargin: 0.02
+  sideMargin: 0.02
+--- !u!114 &972622802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972622799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 490e46e88f6c5d54c97d34bdee30ce68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Sectors>k__BackingField:
   - {fileID: 7128665502193916378}
   - {fileID: 1795810252}
   - {fileID: 858735390}
@@ -1549,6 +1579,11 @@ MonoBehaviour:
   - {fileID: 601789270}
   - {fileID: 750271575}
   - {fileID: 430473966}
+  monitorStartInterval: 7
+  <evacTimePerPerson>k__BackingField: 0.3
+  <TotalPeopleToEvacuate>k__BackingField: 2000
+  minimumPeoplePerSector: 100
+  <interferenceDelays>k__BackingField: 0.8
 --- !u!1 &972697507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1938,6 +1973,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorManager
+      value: 
+      objectReference: {fileID: 972622802}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: X
       objectReference: {fileID: 0}
@@ -1963,7 +2002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4885700099979033557, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5159403025606892246, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -1979,7 +2018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.75134325
+      value: 0.7414925
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -1987,11 +2026,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.2237811
+      value: 0.21383084
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.23496689
+      value: 0.23165563
       objectReference: {fileID: 0}
     - target: {fileID: 7481202364069163799, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -2287,6 +2326,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorManager
+      value: 
+      objectReference: {fileID: 972622802}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: dx
       objectReference: {fileID: 0}
@@ -2312,7 +2355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4885700099979033557, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5159403025606892246, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -2328,19 +2371,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.02
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.47496688
+      value: 0.47165564
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.2237811
+      value: 0.21383084
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.23496689
+      value: 0.23165563
       objectReference: {fileID: 0}
     - target: {fileID: 7481202364069163799, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -2485,6 +2528,10 @@ PrefabInstance:
       value: 0.41960788
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorManager
+      value: 
+      objectReference: {fileID: 972622802}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: L
       objectReference: {fileID: 0}
@@ -2510,7 +2557,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4885700099979033557, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5159403025606892246, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -2526,19 +2573,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.75134325
+      value: 0.7414925
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.7299338
+      value: 0.72331125
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.2237811
+      value: 0.21383084
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.23496689
+      value: 0.23165563
       objectReference: {fileID: 0}
     - target: {fileID: 7481202364069163799, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -2678,6 +2725,10 @@ PrefabInstance:
       value: 0.54460037
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorManager
+      value: 
+      objectReference: {fileID: 972622802}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: Y
       objectReference: {fileID: 0}
@@ -2703,7 +2754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4885700099979033557, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5159403025606892246, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -2719,7 +2770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.50756216
+      value: 0.5076617
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -2727,11 +2778,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.2237811
+      value: 0.21383084
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.23496689
+      value: 0.23165563
       objectReference: {fileID: 0}
     - target: {fileID: 7481202364069163799, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -2871,6 +2922,10 @@ PrefabInstance:
       value: 0.81863385
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorManager
+      value: 
+      objectReference: {fileID: 972622802}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: L
       objectReference: {fileID: 0}
@@ -2896,7 +2951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4885700099979033557, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5159403025606892246, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -2912,19 +2967,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.02
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.7299338
+      value: 0.72331125
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.2237811
+      value: 0.21383084
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.23496689
+      value: 0.23165563
       objectReference: {fileID: 0}
     - target: {fileID: 7481202364069163799, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -2988,8 +3043,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -6}
-  m_SizeDelta: {x: -50, y: 50}
+  m_AnchoredPosition: {x: 0, y: -8}
+  m_SizeDelta: {x: -50, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1674738738
 MonoBehaviour:
@@ -3006,6 +3061,7 @@ MonoBehaviour:
   savedImg: {fileID: 2045843215}
   saveableImg: {fileID: 293485843}
   deadImg: {fileID: 1297467112}
+  sectorManager: {fileID: 972622802}
 --- !u!1 &1711360647
 GameObject:
   m_ObjectHideFlags: 0
@@ -3406,6 +3462,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorManager
+      value: 
+      objectReference: {fileID: 972622802}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: su
       objectReference: {fileID: 0}
@@ -3431,7 +3491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4885700099979033557, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5159403025606892246, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -3447,19 +3507,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.75134325
+      value: 0.7414925
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.47496688
+      value: 0.47165564
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.2237811
+      value: 0.21383084
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.23496689
+      value: 0.23165563
       objectReference: {fileID: 0}
     - target: {fileID: 7481202364069163799, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -3761,6 +3821,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorManager
+      value: 
+      objectReference: {fileID: 972622802}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorButtonAsString
       value: L
       objectReference: {fileID: 0}
@@ -3786,7 +3850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4885700099979033557, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5159403025606892246, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -3802,19 +3866,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.2637811
+      value: 0.27383083
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.7299338
+      value: 0.72331125
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.2237811
+      value: 0.21383084
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.23496689
+      value: 0.23165563
       objectReference: {fileID: 0}
     - target: {fileID: 7481202364069163799, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
@@ -3851,7 +3915,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2124847472}
   - component: {fileID: 2124847473}
-  - component: {fileID: 2124847471}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -3859,36 +3922,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2124847471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124847470}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2901584981e6f04394ac4a22fcf3075, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraRows: 3
-  cameraColumns: 4
-  cameraPadding: 0.02
-  bottomMargin: 0.2
-  topMargin: 0.01
-  sectors:
-  - {fileID: 7128665502193916378}
-  - {fileID: 1795810252}
-  - {fileID: 858735390}
-  - {fileID: 38500862}
-  - {fileID: 1321947668}
-  - {fileID: 1029444852}
-  - {fileID: 1803671343}
-  - {fileID: 1188197727}
-  - {fileID: 572657637}
-  - {fileID: 601789270}
-  - {fileID: 750271575}
-  - {fileID: 430473966}
 --- !u!4 &2124847472
 Transform:
   m_ObjectHideFlags: 0
@@ -3998,6 +4031,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorManager
+      value: 
+      objectReference: {fileID: 972622802}
+    - target: {fileID: 4358716847029700649, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorKBButtonAsString
       value: Z
       objectReference: {fileID: 0}
@@ -4011,7 +4048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4885700099979033557, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_CullingMask.m_Bits
@@ -4019,7 +4056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.02
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -4027,11 +4064,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.2237811
+      value: 0.21383084
       objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.23496689
+      value: 0.23165563
       objectReference: {fileID: 0}
     - target: {fileID: 8187244519662794552, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer

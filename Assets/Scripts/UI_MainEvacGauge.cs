@@ -7,12 +7,20 @@ public class UI_MainEvacGauge : MonoBehaviour
     [SerializeField] Image saveableImg;
     [SerializeField] Image deadImg;
 
+    [Header("Cache")]
+    [SerializeField] SectorsManager sectorManager;
+
+    // members
+    int totalPeople;
+
     void Start()
     {
         InitializeGaugeValues();
 
         Sector.OnAnySectorEvac += EvacGaugeUp;
         Sector.OnAnySectorKilled += SectorKilled;
+
+        totalPeople = sectorManager.TotalPeopleToEvacuate;
     }
 
     private void OnDisable()
@@ -41,8 +49,6 @@ public class UI_MainEvacGauge : MonoBehaviour
 
     private float PeopleToFillAmount(int people)
     {
-        int totalPeople = 1200;
-
         return (float)people / (float)totalPeople;
     }
 }

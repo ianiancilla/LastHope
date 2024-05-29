@@ -14,13 +14,8 @@ public class Sector : MonoBehaviour
     [SerializeField] string sectorKBButtonAsString;
     [SerializeField] private Color sectorColor;
 
-    [Header("General Sector Settings (should be applied to prefab always!)")]
-    [Tooltip("Seconds before screen goes blank after destruction")]
-    [SerializeField] float evacTimePerPerson = 0.1f;
-    [SerializeField] float interferenceDelay = 0.8f;
-
-
     [Header("Cache")]
+    [SerializeField] SectorsManager sectorManager;
     [SerializeField] Cannon myCannon;
     [SerializeField] Camera myCamera;
     [SerializeField] TMP_Text inputButtonUI;
@@ -30,21 +25,25 @@ public class Sector : MonoBehaviour
     [SerializeField] GameObject successfulEvacuationPanel;
     [SerializeField] GameObject panelCannonLoaded;
 
-
     [field: SerializeField] public Transform VFXParent { get; private set; }
 
     // members
+    private bool isEvacuated = false;
+    private bool isKilled = false;
+
+    private int maxHealth = 2;
+    private int currentHealth;
+
+    private int peopleInSector;
+    private float evacTime;
+    private float evacElapsedTime = 0f;
+
     private int layer;
     private LayerMask layerMask;
     private const int SECTOR_TO_LAYER_OFFSET = 10;
+
     private string sectorButtonAsString;
-    private int maxHealth = 2;
-    private int currentHealth;
-    private float evacElapsedTime = 0f;
-    private bool isEvacuated = false;
-    private bool isKilled = false;
-    private int peopleInSector = 100;
-    private float evacTime;
+
 
     // events
     public event Action OnSectorHit;
@@ -62,11 +61,14 @@ public class Sector : MonoBehaviour
         SetSectorColor();
         SetButtonText();
         currentHealth = maxHealth;
+        Debug.Log($"{gameObject.name} has gone through Start method.");
     }
 
     private void OnEnable()
     {
-        evacTime = evacTimePerPerson * peopleInSector;
+        evacTime = sectorManager.evacTimePerPerson * peopleInSector;
+        Debug.Log($"{gameObject.name} starting EvacProgress coroutine with Evac Time " +
+                $"{evacTime}");
 
         StartCoroutine(EvacProgress());
     }
@@ -113,6 +115,11 @@ public class Sector : MonoBehaviour
         myCamera.rect = new Rect(x, y, w, h);
     }
 
+    public void SetPeopleInSector(int people) 
+    {
+        peopleInSector = people;
+    }
+
     public void Shoot()
     {
         myCannon.Shoot();
@@ -151,7 +158,7 @@ public class Sector : MonoBehaviour
 
     IEnumerator KillSectroAfterDelay()
     {
-        yield return new WaitForSeconds(interferenceDelay);
+        yield return new WaitForSeconds(sectorManager.interferenceDelays);
 
         TurnOffMonitor();
     }
