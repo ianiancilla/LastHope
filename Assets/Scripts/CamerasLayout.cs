@@ -8,12 +8,13 @@ public class CamerasLayout : MonoBehaviour
     [SerializeField] float cameraPadding;
     [SerializeField] float bottomMargin;
     [SerializeField] float topMargin;
+    [SerializeField] float sideMargin;
 
-
-    [SerializeField] private Sector[] sectors;
-
+    private Sector[] sectors;
     private void Start()
     {
+        sectors = GetComponent<SectorsManager>().Sectors;
+
         if (sectors.Length > cameraColumns * cameraRows)
         {
             Debug.Log("Too many sectors for current camera layout!");
@@ -25,8 +26,12 @@ public class CamerasLayout : MonoBehaviour
 
     private void SetCamerasLayout()
     {
-        float cameraW = (1f - cameraPadding) / ((float)cameraColumns + cameraPadding) - cameraPadding;
-        float cameraH = (1f - cameraPadding - bottomMargin - topMargin) / ((float)cameraRows + cameraPadding) - cameraPadding;
+        float cameraW = (1f - cameraPadding - sideMargin * 2) 
+                        / ((float)cameraColumns + cameraPadding)
+                        - cameraPadding;
+        float cameraH = (1f - cameraPadding - bottomMargin - topMargin)
+                        / ((float)cameraRows + cameraPadding)
+                        - cameraPadding;
 
         int currentCol = 0;
         int currentRow = 0;
@@ -36,7 +41,7 @@ public class CamerasLayout : MonoBehaviour
             if (currentCol >= cameraColumns) { currentCol = 0; }
             if (currentRow >= cameraRows) { currentRow = 0; }
 
-            float camX = cameraPadding + (currentCol * (cameraW + cameraPadding));
+            float camX = cameraPadding + sideMargin + (currentCol * (cameraW + cameraPadding));
             float camY = cameraPadding + bottomMargin + (currentRow * (cameraH + cameraPadding));
 
             sectors[i].SetCameraViewportRect(camX, camY, cameraW, cameraH);

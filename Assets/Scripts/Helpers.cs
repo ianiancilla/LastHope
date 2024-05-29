@@ -22,4 +22,28 @@ public static class Helpers
 
         return ((value - minOriginalRange) / range1 * range2) + minTargetRange;
     }
+
+    public static int[] RandomlyDivideInt(int total, int numberOfSegments, int minimumPerSegment)
+    {
+        if (minimumPerSegment * numberOfSegments > total)
+        {
+            Debug.LogError("total needs to be higher than the sum of the minimum in each segment!");
+        }
+
+        int[] result = new int[numberOfSegments];
+
+        for (int i = 0; i < numberOfSegments; i++)
+        {
+            result[i] = minimumPerSegment;
+            total -= minimumPerSegment;
+        }
+
+        while (total > 0)
+        {
+            result[Random.Range(0, numberOfSegments)]++;
+            total--;
+        }
+
+        return result;
+    }
 }
