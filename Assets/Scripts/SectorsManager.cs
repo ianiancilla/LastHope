@@ -59,9 +59,13 @@ public class SectorsManager: MonoBehaviour
 
     IEnumerator ActivateRandomSector()
     {
+        int index = Random.Range(0, inactiveSectors.Count);
+        ActivateSector(inactiveSectors[index]);
+        inactiveSectors.RemoveAt(index);
+
         yield return new WaitForSeconds(monitorStartInterval);
 
-        int index = Random.Range(0, inactiveSectors.Count);
+        index = Random.Range(0, inactiveSectors.Count);
         ActivateSector(inactiveSectors[index]);
         inactiveSectors.RemoveAt(index);
 
