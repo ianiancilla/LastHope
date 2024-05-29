@@ -61,14 +61,13 @@ public class Sector : MonoBehaviour
         SetSectorColor();
         SetButtonText();
         currentHealth = maxHealth;
-        Debug.Log($"{gameObject.name} has gone through Start method.");
     }
 
     private void OnEnable()
     {
         evacTime = sectorManager.evacTimePerPerson * peopleInSector;
-        Debug.Log($"{gameObject.name} starting EvacProgress coroutine with Evac Time " +
-                $"{evacTime}");
+        //Debug.Log($"{gameObject.name} starting EvacProgress coroutine with Evac Time " +
+        //        $"{evacTime}");
 
         StartCoroutine(EvacProgress());
     }
