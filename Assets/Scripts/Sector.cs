@@ -103,7 +103,6 @@ public class Sector : MonoBehaviour
 
         Helpers.ChangeLayersRecursively(this.gameObject, layer);
     }
-
     private void SetSectorColor()
     {
         postProcessingVolume.profile.TryGet<ColorAdjustments>(out ColorAdjustments colorAdjustments);
