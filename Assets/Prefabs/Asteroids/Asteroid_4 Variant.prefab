@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.0151360035
       objectReference: {fileID: 0}
+    - target: {fileID: 3912194323565749139, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
+      propertyPath: groundHitVFX
+      value: 
+      objectReference: {fileID: 7902628961197000024, guid: 07aac3289e61f384caed665b4d2ac233, type: 3}
     - target: {fileID: 5404159201443359458, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0569999

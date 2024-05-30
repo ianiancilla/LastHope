@@ -198,7 +198,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explodeVFX: {fileID: 8010841460971978947, guid: b421010818221174994376d780b8b319, type: 3}
-  groundHitVFX: {fileID: 4326587679791551502, guid: 07aac3289e61f384caed665b4d2ac233, type: 3}
+  groundHitVFX: {fileID: 7902628961197000024, guid: 07aac3289e61f384caed665b4d2ac233, type: 3}
+  mySector: {fileID: 0}
 --- !u!58 &1639891438862706800
 CircleCollider2D:
   m_ObjectHideFlags: 0

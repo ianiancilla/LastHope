@@ -70,6 +70,7 @@ public class Sector : MonoBehaviour
         //        $"{evacTime}");
 
         StartCoroutine(EvacProgress());
+        CannonLoaded();
     }
 
     private void SetButtonText()

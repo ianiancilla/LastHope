@@ -4,7 +4,7 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour
 {
     [SerializeField] private ParticleSystem explodeVFX;
-    [SerializeField] private ParticleSystem groundHitVFX;
+    [SerializeField] private GameObject groundHitVFX;
 
     [Header("Cache")]
     [SerializeField] private Sector mySector;
@@ -26,7 +26,9 @@ public class Asteroid : MonoBehaviour
         ground.HitByAsteroid();
         if (groundHitVFX != null) 
         {
-            GameObject groundHitGO = Instantiate(groundHitVFX, transform.position, Quaternion.identity, mySector.VFXParent).gameObject;
+            Vector2 hitGroundPos = transform.position;
+            hitGroundPos.y = -4.5f;
+            GameObject groundHitGO = Instantiate(groundHitVFX, hitGroundPos, Quaternion.identity, mySector.VFXParent);
 
             // spawns need to be on the same sector layer, for both collisions and camera culling
             Helpers.ChangeLayersRecursively(groundHitGO, gameObject.layer);
