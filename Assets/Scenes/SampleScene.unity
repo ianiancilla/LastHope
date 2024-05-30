@@ -2715,11 +2715,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorKBButtonAsString
-      value: "\u2191"
+      value: A
       objectReference: {fileID: 0}
     - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: sectorPadButtonAsString
-      value: A
+      value: "\u2191"
       objectReference: {fileID: 0}
     - target: {fileID: 8187244519662794552, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_Layer
