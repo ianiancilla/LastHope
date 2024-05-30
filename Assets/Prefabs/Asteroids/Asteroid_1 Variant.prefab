@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5404159201443359458, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.76
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 5404159201443359458, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5404159201443359458, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5474462444203784119, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalScale.x
@@ -78,15 +78,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.19
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.19
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5.19
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -95,7 +95,7 @@ PrefabInstance:
     - target: {fileID: 7761173926624541967, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3286163911610860551, guid: d428a007460cbaa4f88a14f13a5fe9f5, type: 3}
+      objectReference: {fileID: -4055590878293644509, guid: 1cb5b4b9d1a76c342b8c2e0554d1f524, type: 3}
     - target: {fileID: 7800710689615407709, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_Name
       value: Asteroid_1 Variant

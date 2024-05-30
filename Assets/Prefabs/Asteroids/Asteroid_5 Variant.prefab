@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 7902628961197000024, guid: 07aac3289e61f384caed665b4d2ac233, type: 3}
     - target: {fileID: 5404159201443359458, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.149
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5404159201443359458, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -62,19 +62,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5404159201443359458, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.21000001
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.21000001
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.21000001
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -83,7 +83,7 @@ PrefabInstance:
     - target: {fileID: 7761173926624541967, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3286163911610860551, guid: da1d5feb4fcf64a4db889871d00b4828, type: 3}
+      objectReference: {fileID: 4992359393111726268, guid: a195f41f3e37ff942b18833f10616a74, type: 3}
     - target: {fileID: 7800710689615407709, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_Name
       value: Asteroid_5 Variant

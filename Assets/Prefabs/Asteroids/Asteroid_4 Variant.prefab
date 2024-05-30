@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 7902628961197000024, guid: 07aac3289e61f384caed665b4d2ac233, type: 3}
     - target: {fileID: 5404159201443359458, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.0569999
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5404159201443359458, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -66,19 +66,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5404159201443359458, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.17
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.17
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5.17
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -87,7 +99,7 @@ PrefabInstance:
     - target: {fileID: 7761173926624541967, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3286163911610860551, guid: 38161f35f1e84a441b0e9e86e8edb7a3, type: 3}
+      objectReference: {fileID: -8878384717079994619, guid: 69079ad43de11c546abb004a49e124f7, type: 3}
     - target: {fileID: 7800710689615407709, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_Name
       value: Asteroid_4 Variant

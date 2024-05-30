@@ -4581,10 +4581,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5261749421411554486, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
       value: 0.04

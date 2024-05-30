@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 7902628961197000024, guid: 07aac3289e61f384caed665b4d2ac233, type: 3}
     - target: {fileID: 5404159201443359458, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.3070002
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 5404159201443359458, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -62,19 +62,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5404159201443359458, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.35000002
+      value: 0.76
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.35000002
+      value: 0.76
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.35000002
+      value: 0.76
       objectReference: {fileID: 0}
     - target: {fileID: 6146527718835238548, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -83,7 +83,7 @@ PrefabInstance:
     - target: {fileID: 7761173926624541967, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3286163911610860551, guid: 6d3a9e35989db1048a69cfe1819b7b62, type: 3}
+      objectReference: {fileID: 7574398061930389243, guid: 8760744a2ef76774dac9ee105fc9b2e8, type: 3}
     - target: {fileID: 7800710689615407709, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: m_Name
       value: Asteroid_2 Variant
