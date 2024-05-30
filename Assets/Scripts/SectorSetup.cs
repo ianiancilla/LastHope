@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-
+[ExecuteAlways]
 public class SectorSetup : MonoBehaviour
 {
     [Header("This Sector Settings")]
