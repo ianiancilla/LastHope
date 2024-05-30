@@ -28,4 +28,9 @@ public class IntroSequence : MonoBehaviour
 
         SceneLoader.LoadLevel();
     }
+
+    public void SkipIntro()
+    {
+        SceneLoader.LoadLevel();
+    }
 }
