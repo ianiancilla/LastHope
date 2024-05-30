@@ -25,5 +25,7 @@ public class IntroSequence : MonoBehaviour
             yield return new WaitForSeconds(displayTimes[i]); // Wait for specified time
             svgImages[i].SetActive(false);   // Hide the SVG
         }
+
+        SceneLoader.LoadLevel();
     }
 }

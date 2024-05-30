@@ -269,7 +269,6 @@ GameObject:
   m_Component:
   - component: {fileID: 200540685}
   - component: {fileID: 200540684}
-  - component: {fileID: 200540683}
   - component: {fileID: 200540686}
   m_Layer: 0
   m_Name: Main Camera
@@ -278,14 +277,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &200540683
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 200540682}
-  m_Enabled: 1
 --- !u!20 &200540684
 Camera:
   m_ObjectHideFlags: 0
@@ -2897,6 +2888,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4935731859267906266, guid: 88cbe7ef2fad13541b35441de9044361, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935731859267906266, guid: 88cbe7ef2fad13541b35441de9044361, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935731859267906266, guid: 88cbe7ef2fad13541b35441de9044361, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1592366552}
+    - target: {fileID: 4935731859267906266, guid: 88cbe7ef2fad13541b35441de9044361, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935731859267906266, guid: 88cbe7ef2fad13541b35441de9044361, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartIntro
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935731859267906266, guid: 88cbe7ef2fad13541b35441de9044361, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenuNavigation, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935731859267906266, guid: 88cbe7ef2fad13541b35441de9044361, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5403904136403192413, guid: 88cbe7ef2fad13541b35441de9044361, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3056,6 +3075,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 200540685}
   - {fileID: 141602348}
-  - {fileID: 1090870751}
   - {fileID: 2134992042}
   - {fileID: 1592366553}
+  - {fileID: 1090870751}

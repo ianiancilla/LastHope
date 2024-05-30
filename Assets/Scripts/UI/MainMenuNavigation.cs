@@ -10,7 +10,6 @@ public class MainMenuNavigation : MonoBehaviour
     {
         GoToMainMenu();
     }
-
     public void GoToMainMenu()
     {
         optionsMenu.SetActive(false);
@@ -28,5 +27,10 @@ public class MainMenuNavigation : MonoBehaviour
         mainMenu.SetActive(false);
         optionsMenu.SetActive(false);
         creditsMenu.SetActive(true);
+    }
+
+    public void StartIntro()
+    {
+        SceneLoader.LoadIntro();
     }
 }

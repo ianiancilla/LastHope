@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 public static class SceneLoader
 {
     private static readonly int mainMenuIndex = 0;
-    private static readonly int howToPlayIndex = 1;
-    private static readonly int introIndex = 2;
-    private static readonly int levelIndex = 3;
+    private static readonly int howToPlayIndex = -1;
+    private static readonly int introIndex = 1;
+    private static readonly int levelIndex = 2;
 
     public static void LoadMainMenu()
     {
