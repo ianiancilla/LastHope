@@ -1601,8 +1601,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1365533004}
   - {fileID: 4135333}
+  - {fileID: 1365533004}
   - {fileID: 1711360651}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1696,7 +1696,7 @@ MonoBehaviour:
   - {fileID: 430473966}
   monitorStartInterval: 7
   <evacTimePerPerson>k__BackingField: 0.3
-  <TotalPeopleToEvacuate>k__BackingField: 2000
+  <TotalPeopleToEvacuate>k__BackingField: 20000
   minimumPeoplePerSector: 100
   <interferenceDelays>k__BackingField: 0.8
 --- !u!1 &972697507
@@ -4492,6 +4492,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4840858418899470946, guid: 21269b3fa3b98324fbe41f683df949e1, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 53378a988ec053542a2e42db493d8679, type: 3}
+    - target: {fileID: 4840858418899470946, guid: 21269b3fa3b98324fbe41f683df949e1, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 53378a988ec053542a2e42db493d8679, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

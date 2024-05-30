@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,10 +24,18 @@ public class SectorsManager: MonoBehaviour
 
     // members
     private List<Sector> inactiveSectors = new List<Sector>();
+    private int peopleEvacuated;
+    private int peopleDead;
 
+    // events
+    public enum Ending { allDead, someSaved, allSaved }
+    public event Action<Ending> GameEnd;
 
     private void Start()
     {
+        Sector.OnAnySectorEvac += OnAnySectorEvac;
+        Sector.OnAnySectorKilled += OnAnySectorKilled;
+
         DistributePopulationToSectors();
 
         foreach (Sector sector in Sectors) { inactiveSectors.Add(sector); }
@@ -59,13 +68,13 @@ public class SectorsManager: MonoBehaviour
 
     IEnumerator ActivateRandomSector()
     {
-        int index = Random.Range(0, inactiveSectors.Count);
+        int index = UnityEngine.Random.Range(0, inactiveSectors.Count);
         ActivateSector(inactiveSectors[index]);
         inactiveSectors.RemoveAt(index);
 
         yield return new WaitForSeconds(monitorStartInterval);
 
-        index = Random.Range(0, inactiveSectors.Count);
+        index = UnityEngine.Random.Range(0, inactiveSectors.Count);
         ActivateSector(inactiveSectors[index]);
         inactiveSectors.RemoveAt(index);
 
@@ -73,6 +82,43 @@ public class SectorsManager: MonoBehaviour
         {
             StartCoroutine(ActivateRandomSector());
         }
+    }
+
+    private void OnAnySectorKilled(int peopleInSector)
+    {
+        peopleDead += peopleInSector;
+        CheckForEndGame();
+    }
+
+    private void OnAnySectorEvac(int peopleInSector)
+    {
+        peopleEvacuated += peopleInSector;
+        CheckForEndGame();
+    }
+
+    private bool CheckForEndGame()
+    {
+        if (peopleEvacuated + peopleDead != TotalPeopleToEvacuate)
+        {
+            return false;
+        }
+
+        if (peopleDead == 0)
+        {
+            Debug.Log("Everyone was saved!");
+            GameEnd?.Invoke(Ending.allSaved);
+        }
+        else if (peopleEvacuated == 0)
+        {
+            Debug.Log("Everyone died!");
+            GameEnd?.Invoke(Ending.allDead);
+        }
+        else
+        {
+            Debug.Log("Some people were saved, but not all...");
+            GameEnd?.Invoke(Ending.someSaved);
+        }
+        return true;
     }
 
 }
