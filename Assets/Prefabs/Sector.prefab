@@ -607,6 +607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1410737720882022041}
   - component: {fileID: 4358716847029700649}
+  - component: {fileID: 8181101251577823128}
   m_Layer: 10
   m_Name: Sector
   m_TagString: Untagged
@@ -648,14 +649,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d650ba4d68805294595bdaea2550a37f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sectorNumber: 0
-  sectorPadButtonAsString: 
-  sectorKBButtonAsString: 
-  sectorColor: {r: 0.7902375, g: 1, b: 0.4198113, a: 1}
   sectorManager: {fileID: 0}
   myCannon: {fileID: 6762839198587481819}
   myCamera: {fileID: 5833362562736743568}
-  inputButtonUI: {fileID: 563404956035915699}
   postProcessingVolume: {fileID: 6621552702164641716}
   objectsToDisableOnSectorInactive:
   - {fileID: 4662387296539087690}
@@ -665,6 +661,25 @@ MonoBehaviour:
   successfulEvacuationPanel: {fileID: 1153868769121220799}
   panelCannonLoaded: {fileID: 8335386875055637219}
   <VFXParent>k__BackingField: {fileID: 1740023240189990161}
+--- !u!114 &8181101251577823128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4885700099979033557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f727cb894280d4fb7d15270db3722f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sectorNumber: 0
+  sectorPadButtonAsString: 
+  sectorKBButtonAsString: 
+  sectorColor: {r: 0.79337645, g: 1, b: 0.5896226, a: 1}
+  myCamera: {fileID: 5833362562736743568}
+  inputButtonUI: {fileID: 563404956035915699}
+  postProcessingVolume: {fileID: 6621552702164641716}
 --- !u!1 &5159403025606892246
 GameObject:
   m_ObjectHideFlags: 0

@@ -594,6 +594,18 @@ PrefabInstance:
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.23165563
       objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorNumber
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: F
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: RB
+      objectReference: {fileID: 0}
     - target: {fileID: 8218184999900399657, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 111.149994
@@ -723,6 +735,18 @@ PrefabInstance:
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.23165563
       objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorNumber
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: R
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: "\u2192"
+      objectReference: {fileID: 0}
     - target: {fileID: 8218184999900399657, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 111.149994
@@ -851,6 +875,18 @@ PrefabInstance:
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.23165563
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: X
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: "\u2193"
       objectReference: {fileID: 0}
     - target: {fileID: 8218184999900399657, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1148,6 +1184,18 @@ PrefabInstance:
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.23165563
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: S
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: Y
       objectReference: {fileID: 0}
     - target: {fileID: 8218184999900399657, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1708,6 +1756,18 @@ PrefabInstance:
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.23165563
       objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: V
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: A
+      objectReference: {fileID: 0}
     - target: {fileID: 8218184999900399657, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 111.149994
@@ -1989,6 +2049,18 @@ PrefabInstance:
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.23165563
       objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorNumber
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: "\u2191"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: A
+      objectReference: {fileID: 0}
     - target: {fileID: 8218184999900399657, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 111.149994
@@ -2123,6 +2195,18 @@ PrefabInstance:
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.23165563
       objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorNumber
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: P
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: RT
+      objectReference: {fileID: 0}
     - target: {fileID: 8218184999900399657, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 111.149994
@@ -2252,6 +2336,18 @@ PrefabInstance:
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.23165563
       objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: C
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: B
+      objectReference: {fileID: 0}
     - target: {fileID: 8218184999900399657, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 111.149994
@@ -2380,6 +2476,18 @@ PrefabInstance:
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.23165563
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorNumber
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: Q
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: LT
       objectReference: {fileID: 0}
     - target: {fileID: 8218184999900399657, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2853,6 +2961,18 @@ PrefabInstance:
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.23165563
       objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorNumber
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: T
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: X
+      objectReference: {fileID: 0}
     - target: {fileID: 8218184999900399657, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 111.149994
@@ -3144,6 +3264,18 @@ PrefabInstance:
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.23165563
       objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorNumber
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: W
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: LB
+      objectReference: {fileID: 0}
     - target: {fileID: 8218184999900399657, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 111.149994
@@ -3297,6 +3429,26 @@ PrefabInstance:
     - target: {fileID: 5833362562736743568, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.23165563
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorColor.b
+      value: 0.653308
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorColor.r
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorKBButtonAsString
+      value: Z
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181101251577823128, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
+      propertyPath: sectorPadButtonAsString
+      value: "\u2190"
       objectReference: {fileID: 0}
     - target: {fileID: 8218184999900399657, guid: 2d9b314646622944f939ecce8ac03f62, type: 3}
       propertyPath: m_AnchoredPosition.y
