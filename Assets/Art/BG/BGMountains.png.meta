@@ -158,7 +158,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BGMountains_0: -6477237832189749435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

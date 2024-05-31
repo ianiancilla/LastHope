@@ -158,7 +158,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BGCitySkyline_0: 5648730921404926465
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
