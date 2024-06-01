@@ -29,7 +29,7 @@ public class SectorsManager: MonoBehaviour
 
     // events
     public enum Ending { allDead, someSaved, allSaved }
-    public event Action<Ending> GameEnd;
+    public static event Action<Ending> OnGameEnd;
 
     private void Start()
     {
@@ -40,7 +40,8 @@ public class SectorsManager: MonoBehaviour
 
         foreach (Sector sector in Sectors) { inactiveSectors.Add(sector); }
 
-        StartCoroutine(ActivateRandomSector());
+        ActivateRandomSector();
+        StartCoroutine(ActivateSectorsAtRandomAfterInterval());
     }
 
     private void DistributePopulationToSectors()
@@ -66,22 +67,23 @@ public class SectorsManager: MonoBehaviour
         sector.gameObject.SetActive(true);
     }
 
-    IEnumerator ActivateRandomSector()
+    IEnumerator ActivateSectorsAtRandomAfterInterval()
+    {
+        yield return new WaitForSeconds(monitorStartInterval);
+
+        ActivateRandomSector();
+
+        if (inactiveSectors.Count > 0)
+        {
+            StartCoroutine(ActivateSectorsAtRandomAfterInterval());
+        }
+    }
+
+    private void ActivateRandomSector()
     {
         int index = UnityEngine.Random.Range(0, inactiveSectors.Count);
         ActivateSector(inactiveSectors[index]);
         inactiveSectors.RemoveAt(index);
-
-        yield return new WaitForSeconds(monitorStartInterval);
-
-        index = UnityEngine.Random.Range(0, inactiveSectors.Count);
-        ActivateSector(inactiveSectors[index]);
-        inactiveSectors.RemoveAt(index);
-
-        if (inactiveSectors.Count > 0)
-        {
-            StartCoroutine(ActivateRandomSector());
-        }
     }
 
     private void OnAnySectorKilled(int peopleInSector)
@@ -106,17 +108,17 @@ public class SectorsManager: MonoBehaviour
         if (peopleDead == 0)
         {
             Debug.Log("Everyone was saved!");
-            GameEnd?.Invoke(Ending.allSaved);
+            OnGameEnd?.Invoke(Ending.allSaved);
         }
         else if (peopleEvacuated == 0)
         {
             Debug.Log("Everyone died!");
-            GameEnd?.Invoke(Ending.allDead);
+            OnGameEnd?.Invoke(Ending.allDead);
         }
         else
         {
             Debug.Log("Some people were saved, but not all...");
-            GameEnd?.Invoke(Ending.someSaved);
+            OnGameEnd?.Invoke(Ending.someSaved);
         }
         return true;
     }

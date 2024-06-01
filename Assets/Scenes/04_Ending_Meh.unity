@@ -147,6 +147,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1166862033324800684, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 20605d48b6ec52a4796e870e04399b53, type: 3}
     - target: {fileID: 1249932858747212717, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_SizeDelta.x
       value: 160
@@ -174,6 +178,42 @@ PrefabInstance:
     - target: {fileID: 2051353626208868927, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: svgImages.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: displayTimes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: svgImages.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: svgImages.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: svgImages.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: svgImages.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: svgImages.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: svgImages.Array.data[6]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: svgImages.Array.data[7]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3855192952060707313, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_Pivot.x
@@ -331,6 +371,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8564100508055870487, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d7bc2d5f75107f3479bd928359e9cea6, type: 3}
     - target: {fileID: 9144403559261656252, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.74999994
@@ -349,7 +393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9219932991445236402, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_text
-      value: A to skip
+      value: 'A: return to title'
       objectReference: {fileID: 0}
     - target: {fileID: 9219932991445236402, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_fontSize
@@ -370,6 +414,14 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3117779918439306157, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+    - {fileID: 95656008988649390, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+    - {fileID: 7846126723364321114, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+    - {fileID: 2018243797369433054, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+    - {fileID: 6397016195635964790, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+    - {fileID: 4095161295053169222, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+    - {fileID: 6767038383563496891, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+    - {fileID: 4412843221107180249, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+    - {fileID: 7963564617919905524, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
