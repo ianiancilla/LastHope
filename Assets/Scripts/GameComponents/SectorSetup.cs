@@ -33,15 +33,9 @@ public class SectorSetup : MonoBehaviour
 
     private void SetButtonText()
     {
-        if (FindFirstObjectByType<SceneSettings>().activeControlScheme == ControlScheme.gamepad)
-        {
-            sectorButtonAsString = sectorPadButtonAsString;
-        }
-        else
-        {
-            sectorButtonAsString = sectorKBButtonAsString;
-        }
+        if (FindFirstObjectByType<SceneSettings>().activeControlScheme != ControlScheme.gamepad) { return; }
 
+        sectorButtonAsString = sectorPadButtonAsString;
         inputButtonUI.text = sectorButtonAsString;
     }
 
