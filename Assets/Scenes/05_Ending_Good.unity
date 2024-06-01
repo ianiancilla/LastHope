@@ -196,6 +196,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1166862033324800684, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1166862033324800684, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 37331f922c8fac8489a1970d6509a5ec, type: 3}
