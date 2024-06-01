@@ -113,4 +113,10 @@ public class InputReader : MonoBehaviour, Controls.ILevelActions
         if (!context.performed) { return; }
         ShootEventSector11?.Invoke();
     }
+
+    public void OnToTitle(InputAction.CallbackContext context)
+    {
+        if (!context.performed) { return; }
+    }
+
 }

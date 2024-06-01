@@ -135,6 +135,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ToTitle"",
+                    ""type"": ""Button"",
+                    ""id"": ""3ddcccb7-3457-4e72-af0a-5aba02b24f3e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -401,6 +410,28 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""Sector 11"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b2fbae9b-6952-4cc8-b032-923189dafe94"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""ToTitle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6e6e6476-0a25-46db-b6fb-22ce5a80335d"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""ToTitle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -421,7 +452,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""name"": ""Submit"",
                     ""type"": ""Button"",
                     ""id"": ""7607c7b6-cd76-4816-beef-bd0341cfe950"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -1007,6 +1038,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Level_Sector9 = m_Level.FindAction("Sector 9", throwIfNotFound: true);
         m_Level_Sector10 = m_Level.FindAction("Sector 10", throwIfNotFound: true);
         m_Level_Sector11 = m_Level.FindAction("Sector 11", throwIfNotFound: true);
+        m_Level_ToTitle = m_Level.FindAction("ToTitle", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1099,6 +1131,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Level_Sector9;
     private readonly InputAction m_Level_Sector10;
     private readonly InputAction m_Level_Sector11;
+    private readonly InputAction m_Level_ToTitle;
     public struct LevelActions
     {
         private @Controls m_Wrapper;
@@ -1115,6 +1148,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @Sector9 => m_Wrapper.m_Level_Sector9;
         public InputAction @Sector10 => m_Wrapper.m_Level_Sector10;
         public InputAction @Sector11 => m_Wrapper.m_Level_Sector11;
+        public InputAction @ToTitle => m_Wrapper.m_Level_ToTitle;
         public InputActionMap Get() { return m_Wrapper.m_Level; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1160,6 +1194,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Sector11.started += instance.OnSector11;
             @Sector11.performed += instance.OnSector11;
             @Sector11.canceled += instance.OnSector11;
+            @ToTitle.started += instance.OnToTitle;
+            @ToTitle.performed += instance.OnToTitle;
+            @ToTitle.canceled += instance.OnToTitle;
         }
 
         private void UnregisterCallbacks(ILevelActions instance)
@@ -1200,6 +1237,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Sector11.started -= instance.OnSector11;
             @Sector11.performed -= instance.OnSector11;
             @Sector11.canceled -= instance.OnSector11;
+            @ToTitle.started -= instance.OnToTitle;
+            @ToTitle.performed -= instance.OnToTitle;
+            @ToTitle.canceled -= instance.OnToTitle;
         }
 
         public void RemoveCallbacks(ILevelActions instance)
@@ -1384,6 +1424,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnSector9(InputAction.CallbackContext context);
         void OnSector10(InputAction.CallbackContext context);
         void OnSector11(InputAction.CallbackContext context);
+        void OnToTitle(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

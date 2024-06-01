@@ -11,6 +11,8 @@ public class UI_BindingIcon : MonoBehaviour
     [SerializeField]
     private TMPro.TextMeshProUGUI bindingLabelTMP;
 
+    [SerializeField] private string bindingTextAfterAction;
+
     private InputActionReference actionReference
     {
         get => action;
@@ -44,7 +46,8 @@ public class UI_BindingIcon : MonoBehaviour
         {
             var bindingIndex = 1;
             if (bindingIndex != -1)
-                displayString = action.GetBindingDisplayString(bindingIndex, out deviceLayoutName, out controlPath).ToUpper();
+                displayString = action.GetBindingDisplayString(bindingIndex, out deviceLayoutName, out controlPath).ToUpper()
+                                + bindingTextAfterAction;
         }
 
         // Set on label (if any).
