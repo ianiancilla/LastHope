@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.InputSystem;
 
 [ExecuteAlways]
 public class SectorSetup : MonoBehaviour
@@ -16,6 +17,7 @@ public class SectorSetup : MonoBehaviour
     [SerializeField] Camera myCamera;
     [SerializeField] TMP_Text inputButtonUI;
     [SerializeField] Volume postProcessingVolume;
+    [SerializeField] PlayerInput playerInput;
 
     private int layer;
     private LayerMask layerMask;
@@ -33,8 +35,11 @@ public class SectorSetup : MonoBehaviour
 
     private void SetButtonText()
     {
-        if (FindFirstObjectByType<SceneSettings>().activeControlScheme != ControlScheme.gamepad) { return; }
-
+        // ignore if player chose to use kb controls, text for those is set in the 
+        // sector via UI_BindingIcon.
+        // TODO: move this to the same place
+        Debug.Log("active binding:"+PlayerprefsHelper.GetActiveBinding());
+        if (PlayerprefsHelper.GetActiveBinding() == 0) { return;}
         sectorButtonAsString = sectorPadButtonAsString;
         inputButtonUI.text = sectorButtonAsString;
     }

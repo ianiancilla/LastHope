@@ -44,7 +44,7 @@ public class UI_BindingIcon : MonoBehaviour
         {
             var bindingIndex = 1;
             if (bindingIndex != -1)
-                displayString = action.GetBindingDisplayString(bindingIndex, out deviceLayoutName, out controlPath);
+                displayString = action.GetBindingDisplayString(bindingIndex, out deviceLayoutName, out controlPath).ToUpper();
         }
 
         // Set on label (if any).
