@@ -29,7 +29,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             ""id"": ""37735f47-51c3-48e2-9181-ba688a4c550c"",
             ""actions"": [
                 {
-                    ""name"": ""ShootSector0"",
+                    ""name"": ""Sector 0"",
                     ""type"": ""Button"",
                     ""id"": ""b5ee8b75-3bdb-42af-b967-43f907fac265"",
                     ""expectedControlType"": """",
@@ -38,7 +38,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ShootSector1"",
+                    ""name"": ""Sector 1"",
                     ""type"": ""Button"",
                     ""id"": ""235cb23b-7d7f-4afa-8be6-bac379b29e9f"",
                     ""expectedControlType"": """",
@@ -47,7 +47,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ShootSector2"",
+                    ""name"": ""Sector 2"",
                     ""type"": ""Button"",
                     ""id"": ""ecae19d5-defc-432f-a559-b94c71c54a97"",
                     ""expectedControlType"": """",
@@ -56,7 +56,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ShootSector3"",
+                    ""name"": ""Sector 3"",
                     ""type"": ""Button"",
                     ""id"": ""2cc5512e-5f18-441a-aa71-768038b8c808"",
                     ""expectedControlType"": """",
@@ -65,7 +65,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ShootSector4"",
+                    ""name"": ""Sector 4"",
                     ""type"": ""Button"",
                     ""id"": ""157bbaad-b447-4d3d-b702-d1bafa87941c"",
                     ""expectedControlType"": """",
@@ -74,7 +74,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ShootSector5"",
+                    ""name"": ""Sector 5"",
                     ""type"": ""Button"",
                     ""id"": ""e3c41ac9-6926-43ef-a6fb-2a9fa0bf700d"",
                     ""expectedControlType"": """",
@@ -83,7 +83,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ShootSector6"",
+                    ""name"": ""Sector 6"",
                     ""type"": ""Button"",
                     ""id"": ""1c4b8ec7-16c6-45fe-8d3b-c15d4e97c31b"",
                     ""expectedControlType"": """",
@@ -92,7 +92,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ShootSector7"",
+                    ""name"": ""Sector 7"",
                     ""type"": ""Button"",
                     ""id"": ""1bb32fd3-3aac-4169-8814-a5f173ad72e4"",
                     ""expectedControlType"": """",
@@ -101,7 +101,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ShootSector8"",
+                    ""name"": ""Sector 8"",
                     ""type"": ""Button"",
                     ""id"": ""349709df-84a7-4e33-bc2a-6c3035b941cf"",
                     ""expectedControlType"": """",
@@ -110,7 +110,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ShootSector9"",
+                    ""name"": ""Sector 9"",
                     ""type"": ""Button"",
                     ""id"": ""f107adf9-9b19-43b3-9502-fab08db0ea65"",
                     ""expectedControlType"": """",
@@ -119,7 +119,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ShootSector10"",
+                    ""name"": ""Sector 10"",
                     ""type"": ""Button"",
                     ""id"": ""0e730d01-081e-441b-b1bd-f36c4954a115"",
                     ""expectedControlType"": """",
@@ -128,7 +128,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ShootSector11"",
+                    ""name"": ""Sector 11"",
                     ""type"": ""Button"",
                     ""id"": ""83d4e89c-4232-484e-b7de-9404bf5ef2ea"",
                     ""expectedControlType"": """",
@@ -145,7 +145,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""ShootSector1"",
+                    ""action"": ""Sector 1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -156,7 +156,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""ShootSector1"",
+                    ""action"": ""Sector 1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -167,7 +167,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""ShootSector2"",
+                    ""action"": ""Sector 2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -178,7 +178,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""ShootSector2"",
+                    ""action"": ""Sector 2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -189,18 +189,18 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""ShootSector0"",
+                    ""action"": ""Sector 0"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""3492962f-232a-4806-b238-42d5fa760bba"",
-                    ""path"": ""<Keyboard>/y"",
+                    ""path"": ""<Keyboard>/z"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""ShootSector0"",
+                    ""action"": ""Sector 0"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -211,7 +211,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""ShootSector3"",
+                    ""action"": ""Sector 3"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -222,7 +222,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""ShootSector3"",
+                    ""action"": ""Sector 3"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -233,7 +233,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""ShootSector4"",
+                    ""action"": ""Sector 4"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -244,7 +244,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""ShootSector4"",
+                    ""action"": ""Sector 4"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -255,18 +255,18 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""ShootSector5"",
+                    ""action"": ""Sector 5"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""7cb5c7a3-0fd8-467c-abcf-23fbea37be6b"",
-                    ""path"": ""<Keyboard>/r"",
+                    ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""ShootSector5"",
+                    ""action"": ""Sector 5"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -277,18 +277,18 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""ShootSector6"",
+                    ""action"": ""Sector 6"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""273161e6-5c7b-44db-b483-6843e6f2d86a"",
-                    ""path"": ""<Keyboard>/s"",
+                    ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""ShootSector6"",
+                    ""action"": ""Sector 6"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -299,18 +299,18 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""ShootSector7"",
+                    ""action"": ""Sector 7"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""3656811b-a724-403a-aa17-a585331659b3"",
-                    ""path"": ""<Keyboard>/t"",
+                    ""path"": ""<Keyboard>/f"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""ShootSector7"",
+                    ""action"": ""Sector 7"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -321,7 +321,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""ShootSector8"",
+                    ""action"": ""Sector 8"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -332,7 +332,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""ShootSector8"",
+                    ""action"": ""Sector 8"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -343,7 +343,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""ShootSector9"",
+                    ""action"": ""Sector 9"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -354,7 +354,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""ShootSector9"",
+                    ""action"": ""Sector 9"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -365,18 +365,18 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""ShootSector10"",
+                    ""action"": ""Sector 10"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""5c67c688-0d3d-43e7-b63c-99aa30fa4dc7"",
-                    ""path"": ""<Keyboard>/f"",
+                    ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""ShootSector10"",
+                    ""action"": ""Sector 10"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -387,18 +387,18 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""ShootSector11"",
+                    ""action"": ""Sector 11"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""f2d528fe-a8f7-4c0f-aede-a089e131b948"",
-                    ""path"": ""<Keyboard>/p"",
+                    ""path"": ""<Keyboard>/r"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""ShootSector11"",
+                    ""action"": ""Sector 11"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -995,18 +995,18 @@ public partial class @Controls: IInputActionCollection2, IDisposable
 }");
         // Level
         m_Level = asset.FindActionMap("Level", throwIfNotFound: true);
-        m_Level_ShootSector0 = m_Level.FindAction("ShootSector0", throwIfNotFound: true);
-        m_Level_ShootSector1 = m_Level.FindAction("ShootSector1", throwIfNotFound: true);
-        m_Level_ShootSector2 = m_Level.FindAction("ShootSector2", throwIfNotFound: true);
-        m_Level_ShootSector3 = m_Level.FindAction("ShootSector3", throwIfNotFound: true);
-        m_Level_ShootSector4 = m_Level.FindAction("ShootSector4", throwIfNotFound: true);
-        m_Level_ShootSector5 = m_Level.FindAction("ShootSector5", throwIfNotFound: true);
-        m_Level_ShootSector6 = m_Level.FindAction("ShootSector6", throwIfNotFound: true);
-        m_Level_ShootSector7 = m_Level.FindAction("ShootSector7", throwIfNotFound: true);
-        m_Level_ShootSector8 = m_Level.FindAction("ShootSector8", throwIfNotFound: true);
-        m_Level_ShootSector9 = m_Level.FindAction("ShootSector9", throwIfNotFound: true);
-        m_Level_ShootSector10 = m_Level.FindAction("ShootSector10", throwIfNotFound: true);
-        m_Level_ShootSector11 = m_Level.FindAction("ShootSector11", throwIfNotFound: true);
+        m_Level_Sector0 = m_Level.FindAction("Sector 0", throwIfNotFound: true);
+        m_Level_Sector1 = m_Level.FindAction("Sector 1", throwIfNotFound: true);
+        m_Level_Sector2 = m_Level.FindAction("Sector 2", throwIfNotFound: true);
+        m_Level_Sector3 = m_Level.FindAction("Sector 3", throwIfNotFound: true);
+        m_Level_Sector4 = m_Level.FindAction("Sector 4", throwIfNotFound: true);
+        m_Level_Sector5 = m_Level.FindAction("Sector 5", throwIfNotFound: true);
+        m_Level_Sector6 = m_Level.FindAction("Sector 6", throwIfNotFound: true);
+        m_Level_Sector7 = m_Level.FindAction("Sector 7", throwIfNotFound: true);
+        m_Level_Sector8 = m_Level.FindAction("Sector 8", throwIfNotFound: true);
+        m_Level_Sector9 = m_Level.FindAction("Sector 9", throwIfNotFound: true);
+        m_Level_Sector10 = m_Level.FindAction("Sector 10", throwIfNotFound: true);
+        m_Level_Sector11 = m_Level.FindAction("Sector 11", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1087,34 +1087,34 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     // Level
     private readonly InputActionMap m_Level;
     private List<ILevelActions> m_LevelActionsCallbackInterfaces = new List<ILevelActions>();
-    private readonly InputAction m_Level_ShootSector0;
-    private readonly InputAction m_Level_ShootSector1;
-    private readonly InputAction m_Level_ShootSector2;
-    private readonly InputAction m_Level_ShootSector3;
-    private readonly InputAction m_Level_ShootSector4;
-    private readonly InputAction m_Level_ShootSector5;
-    private readonly InputAction m_Level_ShootSector6;
-    private readonly InputAction m_Level_ShootSector7;
-    private readonly InputAction m_Level_ShootSector8;
-    private readonly InputAction m_Level_ShootSector9;
-    private readonly InputAction m_Level_ShootSector10;
-    private readonly InputAction m_Level_ShootSector11;
+    private readonly InputAction m_Level_Sector0;
+    private readonly InputAction m_Level_Sector1;
+    private readonly InputAction m_Level_Sector2;
+    private readonly InputAction m_Level_Sector3;
+    private readonly InputAction m_Level_Sector4;
+    private readonly InputAction m_Level_Sector5;
+    private readonly InputAction m_Level_Sector6;
+    private readonly InputAction m_Level_Sector7;
+    private readonly InputAction m_Level_Sector8;
+    private readonly InputAction m_Level_Sector9;
+    private readonly InputAction m_Level_Sector10;
+    private readonly InputAction m_Level_Sector11;
     public struct LevelActions
     {
         private @Controls m_Wrapper;
         public LevelActions(@Controls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @ShootSector0 => m_Wrapper.m_Level_ShootSector0;
-        public InputAction @ShootSector1 => m_Wrapper.m_Level_ShootSector1;
-        public InputAction @ShootSector2 => m_Wrapper.m_Level_ShootSector2;
-        public InputAction @ShootSector3 => m_Wrapper.m_Level_ShootSector3;
-        public InputAction @ShootSector4 => m_Wrapper.m_Level_ShootSector4;
-        public InputAction @ShootSector5 => m_Wrapper.m_Level_ShootSector5;
-        public InputAction @ShootSector6 => m_Wrapper.m_Level_ShootSector6;
-        public InputAction @ShootSector7 => m_Wrapper.m_Level_ShootSector7;
-        public InputAction @ShootSector8 => m_Wrapper.m_Level_ShootSector8;
-        public InputAction @ShootSector9 => m_Wrapper.m_Level_ShootSector9;
-        public InputAction @ShootSector10 => m_Wrapper.m_Level_ShootSector10;
-        public InputAction @ShootSector11 => m_Wrapper.m_Level_ShootSector11;
+        public InputAction @Sector0 => m_Wrapper.m_Level_Sector0;
+        public InputAction @Sector1 => m_Wrapper.m_Level_Sector1;
+        public InputAction @Sector2 => m_Wrapper.m_Level_Sector2;
+        public InputAction @Sector3 => m_Wrapper.m_Level_Sector3;
+        public InputAction @Sector4 => m_Wrapper.m_Level_Sector4;
+        public InputAction @Sector5 => m_Wrapper.m_Level_Sector5;
+        public InputAction @Sector6 => m_Wrapper.m_Level_Sector6;
+        public InputAction @Sector7 => m_Wrapper.m_Level_Sector7;
+        public InputAction @Sector8 => m_Wrapper.m_Level_Sector8;
+        public InputAction @Sector9 => m_Wrapper.m_Level_Sector9;
+        public InputAction @Sector10 => m_Wrapper.m_Level_Sector10;
+        public InputAction @Sector11 => m_Wrapper.m_Level_Sector11;
         public InputActionMap Get() { return m_Wrapper.m_Level; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1124,82 +1124,82 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_LevelActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_LevelActionsCallbackInterfaces.Add(instance);
-            @ShootSector0.started += instance.OnShootSector0;
-            @ShootSector0.performed += instance.OnShootSector0;
-            @ShootSector0.canceled += instance.OnShootSector0;
-            @ShootSector1.started += instance.OnShootSector1;
-            @ShootSector1.performed += instance.OnShootSector1;
-            @ShootSector1.canceled += instance.OnShootSector1;
-            @ShootSector2.started += instance.OnShootSector2;
-            @ShootSector2.performed += instance.OnShootSector2;
-            @ShootSector2.canceled += instance.OnShootSector2;
-            @ShootSector3.started += instance.OnShootSector3;
-            @ShootSector3.performed += instance.OnShootSector3;
-            @ShootSector3.canceled += instance.OnShootSector3;
-            @ShootSector4.started += instance.OnShootSector4;
-            @ShootSector4.performed += instance.OnShootSector4;
-            @ShootSector4.canceled += instance.OnShootSector4;
-            @ShootSector5.started += instance.OnShootSector5;
-            @ShootSector5.performed += instance.OnShootSector5;
-            @ShootSector5.canceled += instance.OnShootSector5;
-            @ShootSector6.started += instance.OnShootSector6;
-            @ShootSector6.performed += instance.OnShootSector6;
-            @ShootSector6.canceled += instance.OnShootSector6;
-            @ShootSector7.started += instance.OnShootSector7;
-            @ShootSector7.performed += instance.OnShootSector7;
-            @ShootSector7.canceled += instance.OnShootSector7;
-            @ShootSector8.started += instance.OnShootSector8;
-            @ShootSector8.performed += instance.OnShootSector8;
-            @ShootSector8.canceled += instance.OnShootSector8;
-            @ShootSector9.started += instance.OnShootSector9;
-            @ShootSector9.performed += instance.OnShootSector9;
-            @ShootSector9.canceled += instance.OnShootSector9;
-            @ShootSector10.started += instance.OnShootSector10;
-            @ShootSector10.performed += instance.OnShootSector10;
-            @ShootSector10.canceled += instance.OnShootSector10;
-            @ShootSector11.started += instance.OnShootSector11;
-            @ShootSector11.performed += instance.OnShootSector11;
-            @ShootSector11.canceled += instance.OnShootSector11;
+            @Sector0.started += instance.OnSector0;
+            @Sector0.performed += instance.OnSector0;
+            @Sector0.canceled += instance.OnSector0;
+            @Sector1.started += instance.OnSector1;
+            @Sector1.performed += instance.OnSector1;
+            @Sector1.canceled += instance.OnSector1;
+            @Sector2.started += instance.OnSector2;
+            @Sector2.performed += instance.OnSector2;
+            @Sector2.canceled += instance.OnSector2;
+            @Sector3.started += instance.OnSector3;
+            @Sector3.performed += instance.OnSector3;
+            @Sector3.canceled += instance.OnSector3;
+            @Sector4.started += instance.OnSector4;
+            @Sector4.performed += instance.OnSector4;
+            @Sector4.canceled += instance.OnSector4;
+            @Sector5.started += instance.OnSector5;
+            @Sector5.performed += instance.OnSector5;
+            @Sector5.canceled += instance.OnSector5;
+            @Sector6.started += instance.OnSector6;
+            @Sector6.performed += instance.OnSector6;
+            @Sector6.canceled += instance.OnSector6;
+            @Sector7.started += instance.OnSector7;
+            @Sector7.performed += instance.OnSector7;
+            @Sector7.canceled += instance.OnSector7;
+            @Sector8.started += instance.OnSector8;
+            @Sector8.performed += instance.OnSector8;
+            @Sector8.canceled += instance.OnSector8;
+            @Sector9.started += instance.OnSector9;
+            @Sector9.performed += instance.OnSector9;
+            @Sector9.canceled += instance.OnSector9;
+            @Sector10.started += instance.OnSector10;
+            @Sector10.performed += instance.OnSector10;
+            @Sector10.canceled += instance.OnSector10;
+            @Sector11.started += instance.OnSector11;
+            @Sector11.performed += instance.OnSector11;
+            @Sector11.canceled += instance.OnSector11;
         }
 
         private void UnregisterCallbacks(ILevelActions instance)
         {
-            @ShootSector0.started -= instance.OnShootSector0;
-            @ShootSector0.performed -= instance.OnShootSector0;
-            @ShootSector0.canceled -= instance.OnShootSector0;
-            @ShootSector1.started -= instance.OnShootSector1;
-            @ShootSector1.performed -= instance.OnShootSector1;
-            @ShootSector1.canceled -= instance.OnShootSector1;
-            @ShootSector2.started -= instance.OnShootSector2;
-            @ShootSector2.performed -= instance.OnShootSector2;
-            @ShootSector2.canceled -= instance.OnShootSector2;
-            @ShootSector3.started -= instance.OnShootSector3;
-            @ShootSector3.performed -= instance.OnShootSector3;
-            @ShootSector3.canceled -= instance.OnShootSector3;
-            @ShootSector4.started -= instance.OnShootSector4;
-            @ShootSector4.performed -= instance.OnShootSector4;
-            @ShootSector4.canceled -= instance.OnShootSector4;
-            @ShootSector5.started -= instance.OnShootSector5;
-            @ShootSector5.performed -= instance.OnShootSector5;
-            @ShootSector5.canceled -= instance.OnShootSector5;
-            @ShootSector6.started -= instance.OnShootSector6;
-            @ShootSector6.performed -= instance.OnShootSector6;
-            @ShootSector6.canceled -= instance.OnShootSector6;
-            @ShootSector7.started -= instance.OnShootSector7;
-            @ShootSector7.performed -= instance.OnShootSector7;
-            @ShootSector7.canceled -= instance.OnShootSector7;
-            @ShootSector8.started -= instance.OnShootSector8;
-            @ShootSector8.performed -= instance.OnShootSector8;
-            @ShootSector8.canceled -= instance.OnShootSector8;
-            @ShootSector9.started -= instance.OnShootSector9;
-            @ShootSector9.performed -= instance.OnShootSector9;
-            @ShootSector9.canceled -= instance.OnShootSector9;
-            @ShootSector10.started -= instance.OnShootSector10;
-            @ShootSector10.performed -= instance.OnShootSector10;
-            @ShootSector10.canceled -= instance.OnShootSector10;
-            @ShootSector11.started -= instance.OnShootSector11;
-            @ShootSector11.performed -= instance.OnShootSector11;
-            @ShootSector11.canceled -= instance.OnShootSector11;
+            @Sector0.started -= instance.OnSector0;
+            @Sector0.performed -= instance.OnSector0;
+            @Sector0.canceled -= instance.OnSector0;
+            @Sector1.started -= instance.OnSector1;
+            @Sector1.performed -= instance.OnSector1;
+            @Sector1.canceled -= instance.OnSector1;
+            @Sector2.started -= instance.OnSector2;
+            @Sector2.performed -= instance.OnSector2;
+            @Sector2.canceled -= instance.OnSector2;
+            @Sector3.started -= instance.OnSector3;
+            @Sector3.performed -= instance.OnSector3;
+            @Sector3.canceled -= instance.OnSector3;
+            @Sector4.started -= instance.OnSector4;
+            @Sector4.performed -= instance.OnSector4;
+            @Sector4.canceled -= instance.OnSector4;
+            @Sector5.started -= instance.OnSector5;
+            @Sector5.performed -= instance.OnSector5;
+            @Sector5.canceled -= instance.OnSector5;
+            @Sector6.started -= instance.OnSector6;
+            @Sector6.performed -= instance.OnSector6;
+            @Sector6.canceled -= instance.OnSector6;
+            @Sector7.started -= instance.OnSector7;
+            @Sector7.performed -= instance.OnSector7;
+            @Sector7.canceled -= instance.OnSector7;
+            @Sector8.started -= instance.OnSector8;
+            @Sector8.performed -= instance.OnSector8;
+            @Sector8.canceled -= instance.OnSector8;
+            @Sector9.started -= instance.OnSector9;
+            @Sector9.performed -= instance.OnSector9;
+            @Sector9.canceled -= instance.OnSector9;
+            @Sector10.started -= instance.OnSector10;
+            @Sector10.performed -= instance.OnSector10;
+            @Sector10.canceled -= instance.OnSector10;
+            @Sector11.started -= instance.OnSector11;
+            @Sector11.performed -= instance.OnSector11;
+            @Sector11.canceled -= instance.OnSector11;
         }
 
         public void RemoveCallbacks(ILevelActions instance)
@@ -1372,18 +1372,18 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     }
     public interface ILevelActions
     {
-        void OnShootSector0(InputAction.CallbackContext context);
-        void OnShootSector1(InputAction.CallbackContext context);
-        void OnShootSector2(InputAction.CallbackContext context);
-        void OnShootSector3(InputAction.CallbackContext context);
-        void OnShootSector4(InputAction.CallbackContext context);
-        void OnShootSector5(InputAction.CallbackContext context);
-        void OnShootSector6(InputAction.CallbackContext context);
-        void OnShootSector7(InputAction.CallbackContext context);
-        void OnShootSector8(InputAction.CallbackContext context);
-        void OnShootSector9(InputAction.CallbackContext context);
-        void OnShootSector10(InputAction.CallbackContext context);
-        void OnShootSector11(InputAction.CallbackContext context);
+        void OnSector0(InputAction.CallbackContext context);
+        void OnSector1(InputAction.CallbackContext context);
+        void OnSector2(InputAction.CallbackContext context);
+        void OnSector3(InputAction.CallbackContext context);
+        void OnSector4(InputAction.CallbackContext context);
+        void OnSector5(InputAction.CallbackContext context);
+        void OnSector6(InputAction.CallbackContext context);
+        void OnSector7(InputAction.CallbackContext context);
+        void OnSector8(InputAction.CallbackContext context);
+        void OnSector9(InputAction.CallbackContext context);
+        void OnSector10(InputAction.CallbackContext context);
+        void OnSector11(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

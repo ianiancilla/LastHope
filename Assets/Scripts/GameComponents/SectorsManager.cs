@@ -5,19 +5,19 @@ using UnityEngine;
 
 public class SectorsManager: MonoBehaviour
 {
-    [Header("Cache")]
+    //[Header("Cache")]
     [field: SerializeField] public Sector[] Sectors { get; private set; }
 
     [Header("Progress")]
     [SerializeField] private float monitorStartInterval;
 
 
-    [Header("Evac")]
+    //[Header("Evac")]
     [field: SerializeField] public float evacTimePerPerson { get; private set; } = 0.2f;
     [field: SerializeField] public int TotalPeopleToEvacuate { get; private set; }
     [SerializeField] private int minimumPeoplePerSector;
 
-    [Header("Destruction")]
+    //[Header("Destruction")]
     [Tooltip("Seconds before screen goes blank after destruction")]
     [field: SerializeField] public float interferenceDelays { get; private set; } = 0.8f;
 

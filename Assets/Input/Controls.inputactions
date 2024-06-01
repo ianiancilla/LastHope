@@ -6,7 +6,7 @@
             "id": "37735f47-51c3-48e2-9181-ba688a4c550c",
             "actions": [
                 {
-                    "name": "ShootSector0",
+                    "name": "Sector 0",
                     "type": "Button",
                     "id": "b5ee8b75-3bdb-42af-b967-43f907fac265",
                     "expectedControlType": "",
@@ -15,7 +15,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ShootSector1",
+                    "name": "Sector 1",
                     "type": "Button",
                     "id": "235cb23b-7d7f-4afa-8be6-bac379b29e9f",
                     "expectedControlType": "",
@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ShootSector2",
+                    "name": "Sector 2",
                     "type": "Button",
                     "id": "ecae19d5-defc-432f-a559-b94c71c54a97",
                     "expectedControlType": "",
@@ -33,7 +33,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ShootSector3",
+                    "name": "Sector 3",
                     "type": "Button",
                     "id": "2cc5512e-5f18-441a-aa71-768038b8c808",
                     "expectedControlType": "",
@@ -42,7 +42,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ShootSector4",
+                    "name": "Sector 4",
                     "type": "Button",
                     "id": "157bbaad-b447-4d3d-b702-d1bafa87941c",
                     "expectedControlType": "",
@@ -51,7 +51,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ShootSector5",
+                    "name": "Sector 5",
                     "type": "Button",
                     "id": "e3c41ac9-6926-43ef-a6fb-2a9fa0bf700d",
                     "expectedControlType": "",
@@ -60,7 +60,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ShootSector6",
+                    "name": "Sector 6",
                     "type": "Button",
                     "id": "1c4b8ec7-16c6-45fe-8d3b-c15d4e97c31b",
                     "expectedControlType": "",
@@ -69,7 +69,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ShootSector7",
+                    "name": "Sector 7",
                     "type": "Button",
                     "id": "1bb32fd3-3aac-4169-8814-a5f173ad72e4",
                     "expectedControlType": "",
@@ -78,7 +78,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ShootSector8",
+                    "name": "Sector 8",
                     "type": "Button",
                     "id": "349709df-84a7-4e33-bc2a-6c3035b941cf",
                     "expectedControlType": "",
@@ -87,7 +87,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ShootSector9",
+                    "name": "Sector 9",
                     "type": "Button",
                     "id": "f107adf9-9b19-43b3-9502-fab08db0ea65",
                     "expectedControlType": "",
@@ -96,7 +96,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ShootSector10",
+                    "name": "Sector 10",
                     "type": "Button",
                     "id": "0e730d01-081e-441b-b1bd-f36c4954a115",
                     "expectedControlType": "",
@@ -105,7 +105,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ShootSector11",
+                    "name": "Sector 11",
                     "type": "Button",
                     "id": "83d4e89c-4232-484e-b7de-9404bf5ef2ea",
                     "expectedControlType": "",
@@ -122,7 +122,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "ShootSector1",
+                    "action": "Sector 1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -133,7 +133,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "ShootSector1",
+                    "action": "Sector 1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -144,7 +144,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "ShootSector2",
+                    "action": "Sector 2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -155,7 +155,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "ShootSector2",
+                    "action": "Sector 2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -166,18 +166,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "ShootSector0",
+                    "action": "Sector 0",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "3492962f-232a-4806-b238-42d5fa760bba",
-                    "path": "<Keyboard>/y",
+                    "path": "<Keyboard>/z",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "ShootSector0",
+                    "action": "Sector 0",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -188,7 +188,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "ShootSector3",
+                    "action": "Sector 3",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -199,7 +199,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "ShootSector3",
+                    "action": "Sector 3",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -210,7 +210,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "ShootSector4",
+                    "action": "Sector 4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -221,7 +221,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "ShootSector4",
+                    "action": "Sector 4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -232,18 +232,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "ShootSector5",
+                    "action": "Sector 5",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "7cb5c7a3-0fd8-467c-abcf-23fbea37be6b",
-                    "path": "<Keyboard>/r",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "ShootSector5",
+                    "action": "Sector 5",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -254,18 +254,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "ShootSector6",
+                    "action": "Sector 6",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "273161e6-5c7b-44db-b483-6843e6f2d86a",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "ShootSector6",
+                    "action": "Sector 6",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -276,18 +276,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "ShootSector7",
+                    "action": "Sector 7",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "3656811b-a724-403a-aa17-a585331659b3",
-                    "path": "<Keyboard>/t",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "ShootSector7",
+                    "action": "Sector 7",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -298,7 +298,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "ShootSector8",
+                    "action": "Sector 8",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -309,7 +309,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "ShootSector8",
+                    "action": "Sector 8",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -320,7 +320,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "ShootSector9",
+                    "action": "Sector 9",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -331,7 +331,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "ShootSector9",
+                    "action": "Sector 9",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -342,18 +342,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "ShootSector10",
+                    "action": "Sector 10",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "5c67c688-0d3d-43e7-b63c-99aa30fa4dc7",
-                    "path": "<Keyboard>/f",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "ShootSector10",
+                    "action": "Sector 10",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -364,18 +364,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "ShootSector11",
+                    "action": "Sector 11",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "f2d528fe-a8f7-4c0f-aede-a089e131b948",
-                    "path": "<Keyboard>/p",
+                    "path": "<Keyboard>/r",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "ShootSector11",
+                    "action": "Sector 11",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

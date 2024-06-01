@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 10
+  serializedVersion: 9
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -44,6 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,6 +67,9 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -590,8 +594,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: hold to skip
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8c0a976a83605da4787a803af81ad4e5, type: 2}
+  m_sharedMaterial: {fileID: -9173528884000165836, guid: 8c0a976a83605da4787a803af81ad4e5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -615,7 +619,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14.3
+  m_fontSize: 11.4
   m_fontSizeBase: 14.86
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -631,17 +635,15 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
-  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -684,7 +686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &470124985
 RectTransform:
   m_ObjectHideFlags: 0
@@ -849,83 +851,83 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: b5ee8b75-3bdb-42af-b967-43f907fac265
-    m_ActionName: 'Level/ShootSector0[/Keyboard/y]'
+    m_ActionName: Level/ShootSector0[/Keyboard/y]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 235cb23b-7d7f-4afa-8be6-bac379b29e9f
-    m_ActionName: 'Level/ShootSector1[/Keyboard/x]'
+    m_ActionName: Level/ShootSector1[/Keyboard/x]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: ecae19d5-defc-432f-a559-b94c71c54a97
-    m_ActionName: 'Level/ShootSector2[/Keyboard/c]'
+    m_ActionName: Level/ShootSector2[/Keyboard/c]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 2cc5512e-5f18-441a-aa71-768038b8c808
-    m_ActionName: 'Level/ShootSector3[/Keyboard/v]'
+    m_ActionName: Level/ShootSector3[/Keyboard/v]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 157bbaad-b447-4d3d-b702-d1bafa87941c
-    m_ActionName: 'Level/ShootSector4[/Keyboard/a]'
+    m_ActionName: Level/ShootSector4[/Keyboard/a]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: e3c41ac9-6926-43ef-a6fb-2a9fa0bf700d
-    m_ActionName: 'Level/ShootSector5[/Keyboard/r]'
+    m_ActionName: Level/ShootSector5[/Keyboard/r]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 1c4b8ec7-16c6-45fe-8d3b-c15d4e97c31b
-    m_ActionName: 'Level/ShootSector6[/Keyboard/s]'
+    m_ActionName: Level/ShootSector6[/Keyboard/s]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 1bb32fd3-3aac-4169-8814-a5f173ad72e4
-    m_ActionName: 'Level/ShootSector7[/Keyboard/t]'
+    m_ActionName: Level/ShootSector7[/Keyboard/t]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 349709df-84a7-4e33-bc2a-6c3035b941cf
-    m_ActionName: 'Level/ShootSector8[/Keyboard/q]'
+    m_ActionName: Level/ShootSector8[/Keyboard/q]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: f107adf9-9b19-43b3-9502-fab08db0ea65
-    m_ActionName: 'Level/ShootSector9[/Keyboard/w]'
+    m_ActionName: Level/ShootSector9[/Keyboard/w]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 0e730d01-081e-441b-b1bd-f36c4954a115
-    m_ActionName: 'Level/ShootSector10[/Keyboard/f]'
+    m_ActionName: Level/ShootSector10[/Keyboard/f]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 83d4e89c-4232-484e-b7de-9404bf5ef2ea
-    m_ActionName: 'Level/ShootSector11[/Keyboard/p]'
+    m_ActionName: Level/ShootSector11[/Keyboard/p]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: c95b2375-e6d9-4b88-9c4c-c5e76515df4b
-    m_ActionName: 'UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 7607c7b6-cd76-4816-beef-bd0341cfe950
-    m_ActionName: 'UI/Submit[/Keyboard/enter]'
+    m_ActionName: UI/Submit[/Keyboard/enter]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 15cef263-9014-4fd5-94d9-4e4a6234a6ef
-    m_ActionName: 'UI/Cancel[/Keyboard/escape]'
+    m_ActionName: UI/Cancel[/Keyboard/escape]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 32b35790-4ed0-4e9a-aa41-69ac6d629449
-    m_ActionName: 'UI/Point[/Mouse/position,/Pen/position]'
+    m_ActionName: UI/Point[/Mouse/position,/Pen/position]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 3c7022bf-7922-4f7c-a998-c437916075ad
-    m_ActionName: 'UI/Click[/Mouse/leftButton,/Pen/tip]'
+    m_ActionName: UI/Click[/Mouse/leftButton,/Pen/tip]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 44b200b1-1557-4083-816c-b22cbdf77ddf
-    m_ActionName: 'UI/RightClick[/Mouse/rightButton]'
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: dad70c86-b58c-4b17-88ad-f5e53adf419e
-    m_ActionName: 'UI/MiddleClick[/Mouse/middleButton]'
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 0489e84a-4833-4c40-bfae-cea84b696689
-    m_ActionName: 'UI/ScrollWheel[/Mouse/scroll]'
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 24908448-c609-4bc3-a128-ea258674378a
@@ -949,7 +951,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 8077946b-2e9a-4ca6-aae4-becdd60a230b
-    m_ActionName: 'UI/Skip[/Keyboard/space]'
+    m_ActionName: UI/Skip[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: UI
@@ -1279,8 +1281,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: A
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8c0a976a83605da4787a803af81ad4e5, type: 2}
+  m_sharedMaterial: {fileID: -9173528884000165836, guid: 8c0a976a83605da4787a803af81ad4e5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1304,7 +1306,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.35
+  m_fontSize: 17.85
   m_fontSizeBase: 14.86
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1320,17 +1322,15 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
-  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0

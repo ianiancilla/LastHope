@@ -184,17 +184,15 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
-  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -608,6 +606,7 @@ GameObject:
   - component: {fileID: 1410737720882022041}
   - component: {fileID: 4358716847029700649}
   - component: {fileID: 8181101251577823128}
+  - component: {fileID: 6352661342840571693}
   m_Layer: 10
   m_Name: Sector
   m_TagString: Untagged
@@ -680,6 +679,20 @@ MonoBehaviour:
   myCamera: {fileID: 5833362562736743568}
   inputButtonUI: {fileID: 563404956035915699}
   postProcessingVolume: {fileID: 6621552702164641716}
+--- !u!114 &6352661342840571693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4885700099979033557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ae6552274eeae141b6a6b1d3eab0feb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: {fileID: 7415811909420413495, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  bindingLabelTMP: {fileID: 563404956035915699}
 --- !u!1 &5159403025606892246
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,17 +801,15 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
-  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
