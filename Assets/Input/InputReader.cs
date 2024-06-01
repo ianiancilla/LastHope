@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System;
 using UnityEngine.Events;
 
 public class InputReader : MonoBehaviour, Controls.ILevelActions
@@ -24,9 +21,22 @@ public class InputReader : MonoBehaviour, Controls.ILevelActions
 
     private void Awake()
     {
+        InitialiseControls();
+
+        RebindSavingLoading.KeyRebind += OnKeyRebindsLoaded;
+    }
+
+    private void InitialiseControls()
+    {
         controls = new Controls();
         controls.Level.SetCallbacks(this);
         controls.Level.Enable();
+    }
+
+    private void OnKeyRebindsLoaded()
+    {
+        InitialiseControls();
+        Debug.Log("Loaded key rebinds to input reader!");
     }
 
     private void OnDestroy()
