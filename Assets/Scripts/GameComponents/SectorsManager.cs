@@ -33,15 +33,24 @@ public class SectorsManager: MonoBehaviour
 
     private void Start()
     {
-        Sector.OnAnySectorEvac += OnAnySectorEvac;
-        Sector.OnAnySectorKilled += OnAnySectorKilled;
-
         DistributePopulationToSectors();
 
         foreach (Sector sector in Sectors) { inactiveSectors.Add(sector); }
 
         ActivateRandomSector();
         StartCoroutine(ActivateSectorsAtRandomAfterInterval());
+    }
+
+    private void OnEnable()
+    {
+        Sector.OnAnySectorEvac += OnAnySectorEvac;
+        Sector.OnAnySectorKilled += OnAnySectorKilled;
+    }
+
+    private void OnDisable()
+    {
+        Sector.OnAnySectorEvac -= OnAnySectorEvac;
+        Sector.OnAnySectorKilled -= OnAnySectorKilled;
     }
 
     private void DistributePopulationToSectors()
@@ -122,5 +131,4 @@ public class SectorsManager: MonoBehaviour
         }
         return true;
     }
-
 }

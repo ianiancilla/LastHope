@@ -6,7 +6,6 @@ public class Projectile : MonoBehaviour
     [SerializeField] private float lifeSpan = 5f;
 
     private GameObject target;
-
     private Vector2 moveVector;
 
     void Update()
@@ -17,17 +16,18 @@ public class Projectile : MonoBehaviour
 
     private void Move()
     {
-        //transform.position = new Vector2(transform.position.x + (moveVector.x * moveSpeed * Time.deltaTime),
-        //                                transform.position.y + (moveVector.y * moveSpeed * Time.deltaTime));
-
-        if (target == null)
+        if (!target)
         {
-            Destroy(gameObject);
+            transform.position = new Vector2(transform.position.x + (moveVector.x * moveSpeed * Time.deltaTime),
+                                transform.position.y + (moveVector.y * moveSpeed * Time.deltaTime));
+        }
+        else
+        {
+            transform.position = Vector2.MoveTowards(transform.position,
+                                            target.transform.position,
+                                            moveSpeed * Time.deltaTime);
         }
 
-        transform.position = Vector2.MoveTowards(transform.position,
-                                                    target.transform.position,
-                                                    moveSpeed * Time.deltaTime);
     }
 
     private void Age()
@@ -39,6 +39,11 @@ public class Projectile : MonoBehaviour
     public void SetTarget(GameObject target)
     {
         this.target = target;
+    }
+
+    public void SetMoveVector(Vector2 direction)
+    {
+        moveVector = direction.normalized;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

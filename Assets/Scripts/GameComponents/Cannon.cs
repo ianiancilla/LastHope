@@ -84,7 +84,11 @@ public class Cannon : MonoBehaviour
                                                 projectileOrigin.position,
                                                 Quaternion.identity,
                                                 this.transform);
-        projectileGO.GetComponent<Projectile>().SetTarget(currentTarget.gameObject);
+        if (currentTarget != null)
+        {
+            projectileGO.GetComponent<Projectile>().SetTarget(currentTarget.gameObject);
+        }
+        projectileGO.GetComponent<Projectile>().SetMoveVector(cannonSprite.transform.up);
 
         // spawns need to be on the same sector layer, for both collisions and camera culling
         Helpers.ChangeLayersRecursively(projectileGO, gameObject.layer);

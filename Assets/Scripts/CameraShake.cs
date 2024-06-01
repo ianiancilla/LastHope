@@ -21,6 +21,7 @@ public class CameraShake : MonoBehaviour
     {
         mySector.OnCannonShoot -= SmallShake;
         mySector.OnSectorKilled -= LargeShake;
+        mySector.OnSectorHit -= LargeShake;
     }
 
     IEnumerator Shake (AnimationCurve curve, float duration)

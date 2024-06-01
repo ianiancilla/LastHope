@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[ExecuteAlways]
+//[ExecuteAlways]
 public class CamerasLayout : MonoBehaviour
 {
     [SerializeField] int cameraRows;

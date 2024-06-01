@@ -13,7 +13,7 @@ public class UI_MainEvacGauge : MonoBehaviour
     // members
     int totalPeople;
 
-    void Start()
+    void OnEnable()
     {
         InitializeGaugeValues();
 

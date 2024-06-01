@@ -6,9 +6,14 @@ using UnityEngine;
 public class LevelSceneManager : MonoBehaviour
 {
 
-    private void Start()
+    private void OnEnable()
     {
         SectorsManager.OnGameEnd += TriggerEnding;
+    }
+
+    private void OnDisable()
+    {
+        SectorsManager.OnGameEnd -= TriggerEnding;
     }
 
     private void TriggerEnding(SectorsManager.Ending ending)

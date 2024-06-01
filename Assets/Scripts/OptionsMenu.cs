@@ -13,5 +13,4 @@ public class OptionsMenu : MonoBehaviour
         PlayerprefsHelper.SetVolume(volumeSlider.value);
         OnVolumeChanged?.Invoke();
     }
-
 }

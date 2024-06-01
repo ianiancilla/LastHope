@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class IntroSequence : MonoBehaviour
 {
-    public GameObject[] svgImages;  // Array to hold SVG game objects
-    public float[] displayTimes;    // Array to hold display times for each SVG
+    [SerializeField] GameObject[] svgImages;  // Array to hold SVG game objects
+    [SerializeField] float[] displayTimes;    // Array to hold display times for each SVG
     [SerializeField] bool loadSceneAutomatically = true;
 
     void Start()

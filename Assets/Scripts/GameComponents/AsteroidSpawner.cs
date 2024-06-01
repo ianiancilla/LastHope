@@ -24,8 +24,9 @@ public class AsteroidSpawner : MonoBehaviour
         InitialiseAsteroidPool();
         FillSpawnPointsToCycleList();
 
-        // initialize timer
+        // initialize timer to half normal wait
         SetSpawnTimer();
+        spawnTimer = spawnTimer / 2f;
     }
 
     private void Update()

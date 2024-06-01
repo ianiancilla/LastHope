@@ -23,14 +23,15 @@ public class UI_BindingIcon : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        RebindSavingLoading.KeyRebind += UpdateBindingDisplay;
-    }
-
     private void OnEnable()
     {
+        RebindSavingLoading.KeyRebind += UpdateBindingDisplay;
         UpdateBindingDisplay();
+    }
+
+    private void OnDisable()
+    {
+        RebindSavingLoading.KeyRebind -= UpdateBindingDisplay;
     }
 
 
