@@ -268,6 +268,9 @@ namespace UnityEngine.InputSystem.Samples.RebindUI
 
             // Configure the rebind.
             m_RebindOperation = action.PerformInteractiveRebinding(bindingIndex)
+                .WithCancelingThrough("<Keyboard>/escape")
+                .WithControlsExcluding("<Mouse>")
+                .WithControlsExcluding("<Gamepad>")
                 .OnCancel(
                     operation =>
                     {
