@@ -822,6 +822,10 @@ PrefabInstance:
       propertyPath: playerInput
       value: 
       objectReference: {fileID: 412475547}
+    - target: {fileID: 1170939533407181255, guid: 828e1e505a916f3488f992b2950f64ce, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1328520320891130922, guid: 828e1e505a916f3488f992b2950f64ce, type: 3}
       propertyPath: m_IsActive
       value: 0

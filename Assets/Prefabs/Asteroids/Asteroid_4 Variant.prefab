@@ -20,6 +20,22 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.0151360035
       objectReference: {fileID: 0}
+    - target: {fileID: 2781125600003576051, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
+      propertyPath: fallingSpeedMax
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781125600003576051, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
+      propertyPath: fallingSpeedMin
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781125600003576051, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
+      propertyPath: movementNoiseSpeed.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781125600003576051, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
+      propertyPath: movementNoiseStrength.x
+      value: 0.002
+      objectReference: {fileID: 0}
     - target: {fileID: 3912194323565749139, guid: 94d865cf1a7365a4483c5fad60bd31e2, type: 3}
       propertyPath: groundHitVFX
       value: 

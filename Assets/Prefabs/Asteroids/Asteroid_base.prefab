@@ -49,9 +49,6 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -181,10 +178,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3598f19ec28a1e7448273fa0ff0ac74c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallingSpeedMax: 0.5
-  fallingSpeedMin: 2
-  movementNoiseSpeed: {x: 0.3, y: 1}
-  movementNoiseStrength: {x: 0.001, y: 0.005}
+  fallingSpeedMax: 1.6
+  fallingSpeedMin: 1
+  movementNoiseSpeed: {x: 0.3, y: 0.1}
+  movementNoiseStrength: {x: 0.002, y: 0.005}
 --- !u!114 &3912194323565749139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,7 +205,6 @@ CircleCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7800710689615407709}
   m_Enabled: 1
-  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -232,9 +228,9 @@ CircleCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
+  m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
   m_Radius: 0.5
 --- !u!50 &3622370283409402657
 Rigidbody2D:

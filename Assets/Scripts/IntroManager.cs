@@ -5,9 +5,12 @@ public class IntroSequence : MonoBehaviour
 {
     public GameObject[] svgImages;  // Array to hold SVG game objects
     public float[] displayTimes;    // Array to hold display times for each SVG
+    [SerializeField] bool loadSceneAutomatically = true;
 
     void Start()
     {
+        if (!loadSceneAutomatically) { return; }
+
         if (svgImages.Length != displayTimes.Length)
         {
             Debug.LogError("The number of SVG images and display times must match!");
@@ -32,5 +35,10 @@ public class IntroSequence : MonoBehaviour
     public void SkipIntro()
     {
         SceneLoader.LoadLevel();
+    }
+
+    public void ToTitle()
+    {
+        SceneLoader.LoadMainMenu();
     }
 }

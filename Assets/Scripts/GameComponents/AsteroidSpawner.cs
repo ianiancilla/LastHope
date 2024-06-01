@@ -1,8 +1,11 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class AsteroidSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] asteroidPrefabs;
+    [SerializeField] private Transform[] spawnPoints;
 
     [SerializeField] private int maxAsteroidsOnScreen = 2;
     [SerializeField] private float spawnTimerMin;
@@ -12,25 +15,14 @@ public class AsteroidSpawner : MonoBehaviour
     [SerializeField] private Sector mySector;
 
 
-    // cache
-    BoxCollider2D boxCollider;
-
     // members
-    private Vector2 boundMin;
-    private Vector2 boundMax;
     private float spawnTimer;
     private GameObject[] asteroidPool;
-
+    private List<Transform> spawnPointsToCycle;
     private void Start()
     {
-        //cache
-        boxCollider = GetComponent<BoxCollider2D>();
-
-        // set spawn boundaries
-        boundMin = boxCollider.bounds.min;
-        boundMax = boxCollider.bounds.max;
-
         InitialiseAsteroidPool();
+        FillSpawnPointsToCycleList();
 
         // initialize timer
         SetSpawnTimer();
@@ -67,9 +59,14 @@ public class AsteroidSpawner : MonoBehaviour
 
     private Vector2 RandomizeAsteroidSpawnPoint()
     {
-        // find random point in spawnbox collider
-        return new Vector2(Random.Range(boundMin.x, boundMax.x),
-                                        Random.Range(boundMin.y, boundMax.y));
+        if (spawnPointsToCycle.Count == 0)
+        {
+            FillSpawnPointsToCycleList();
+        }
+        var popped = spawnPointsToCycle[0];
+        spawnPointsToCycle.RemoveAt(0);
+
+        return popped.position;
     }
 
     private void SetSpawnTimer()
@@ -85,12 +82,9 @@ public class AsteroidSpawner : MonoBehaviour
         {
             GameObject asteroidPrefab = asteroidPrefabs[Random.Range(0, asteroidPrefabs.Length)];
 
-            // find random point in spawnbox collider
-            Vector2 spawnPos = new Vector2(Random.Range(boundMin.x, boundMax.x),
-                                            Random.Range(boundMin.y, boundMax.y));
 
             asteroidPool[i] = Instantiate(asteroidPrefab, 
-                                            spawnPos, 
+                                            transform.position, 
                                             Quaternion.identity, 
                                             this.transform);
 
@@ -103,5 +97,11 @@ public class AsteroidSpawner : MonoBehaviour
             asteroidPool[i].SetActive(false);
         }
 
+    }
+
+    private void FillSpawnPointsToCycleList()
+    {
+        spawnPointsToCycle = spawnPoints.ToList();
+        spawnPointsToCycle = spawnPointsToCycle.OrderBy(x => Random.value).ToList();
     }
 }
