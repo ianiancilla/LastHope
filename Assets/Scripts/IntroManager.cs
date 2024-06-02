@@ -79,7 +79,7 @@ public class SceneManager : MonoBehaviour
 
     public IEnumerator TransitionToLevelAfterSec(float duration)
     {
-        StartCoroutine(betweenPanelsFader.FadeOut(duration));
+        StartCoroutine(sceneFader.FadeOut(duration));
 
         float elapsedTime = 0f;
 
@@ -97,7 +97,7 @@ public class SceneManager : MonoBehaviour
 
     public IEnumerator TransitionToTitleAfterSec(float duration)
     {
-        StartCoroutine(betweenPanelsFader.FadeOut(duration));
+        StartCoroutine(sceneFader.FadeOut(duration));
 
         float elapsedTime = 0f;
 
