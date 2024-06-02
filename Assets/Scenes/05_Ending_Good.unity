@@ -236,6 +236,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: betweenPanelsFader
+      value: 
+      objectReference: {fileID: 813873232663850886}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: svgImages.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -333,7 +337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3896710089692965525, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3896710089692965525, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_LocalRotation.x
@@ -389,7 +393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4855816743515828417, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 4855816743515828417, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_LocalRotation.w
@@ -576,6 +580,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3503283562116144766, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
   m_PrefabInstance: {fileID: 813873232663850883}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &813873232663850886 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3839111297989916460, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+  m_PrefabInstance: {fileID: 813873232663850883}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcf0dc15b50f5c47bf8e74b6c3e44ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

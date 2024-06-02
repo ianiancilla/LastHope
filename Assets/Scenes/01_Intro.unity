@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &832470066 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3839111297989916460, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+  m_PrefabInstance: {fileID: 813873232663850883}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcf0dc15b50f5c47bf8e74b6c3e44ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &813873232663850883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -140,117 +151,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: fadeInDuration
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: fadeBetweenPanels
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: fadeInBetweenPanels
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[0].<fadeIn>k__BackingField
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[1].<fadeIn>k__BackingField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[2].<fadeIn>k__BackingField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[3].<fadeIn>k__BackingField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[0].<fadeOut>k__BackingField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[0].<panelGO>k__BackingField
+      propertyPath: betweenPanelsFader
       value: 
-      objectReference: {fileID: 813873232663850891}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[1].<fadeOut>k__BackingField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[1].<panelGO>k__BackingField
-      value: 
-      objectReference: {fileID: 813873232663850890}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[2].<fadeOut>k__BackingField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[2].<panelGO>k__BackingField
-      value: 
-      objectReference: {fileID: 813873232663850889}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[3].<panelGO>k__BackingField
-      value: 
-      objectReference: {fileID: 813873232663850888}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[4].<panelGO>k__BackingField
-      value: 
-      objectReference: {fileID: 813873232663850887}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[5].<panelGO>k__BackingField
-      value: 
-      objectReference: {fileID: 813873232663850886}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[6].<panelGO>k__BackingField
-      value: 
-      objectReference: {fileID: 813873232663850885}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[7].<fadeOut>k__BackingField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[7].<panelGO>k__BackingField
-      value: 
-      objectReference: {fileID: 813873232663850884}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[0].<displayTime>k__BackingField
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[1].<displayTime>k__BackingField
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[2].<displayTime>k__BackingField
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[3].<displayTime>k__BackingField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[4].<displayTime>k__BackingField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[5].<displayTime>k__BackingField
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[6].<displayTime>k__BackingField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: panels.Array.data[7].<displayTime>k__BackingField
-      value: 5
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 832470066}
     - target: {fileID: 3896710089692965525, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_LocalPosition.z
       value: -20
@@ -455,6 +362,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlidesScene
       objectReference: {fileID: 0}
+    - target: {fileID: 7134509259630873225, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370392578305523373, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7846126723364321114, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -468,46 +383,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
---- !u!1 &813873232663850884 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 95656008988649390, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-  m_PrefabInstance: {fileID: 813873232663850883}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &813873232663850885 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7846126723364321114, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-  m_PrefabInstance: {fileID: 813873232663850883}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &813873232663850886 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2018243797369433054, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-  m_PrefabInstance: {fileID: 813873232663850883}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &813873232663850887 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6397016195635964790, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-  m_PrefabInstance: {fileID: 813873232663850883}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &813873232663850888 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4095161295053169222, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-  m_PrefabInstance: {fileID: 813873232663850883}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &813873232663850889 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6767038383563496891, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-  m_PrefabInstance: {fileID: 813873232663850883}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &813873232663850890 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4412843221107180249, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-  m_PrefabInstance: {fileID: 813873232663850883}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &813873232663850891 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3503283562116144766, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-  m_PrefabInstance: {fileID: 813873232663850883}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

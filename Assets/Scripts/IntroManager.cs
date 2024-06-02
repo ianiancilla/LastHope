@@ -16,13 +16,15 @@ public class SceneManager : MonoBehaviour
 
 
 
-    [SerializeField] FadeInOut fader;
+    [SerializeField] FadeInOut sceneFader;
+    [SerializeField] FadeInOut betweenPanelsFader;
+
     [SerializeField] AudioSource audioSource;
 
 
     void Start()
     {
-        fader.FadeIn(fadeInDuration);
+        sceneFader.FadeIn(fadeInDuration);
 
         StartPanelReel();
     }
@@ -40,7 +42,7 @@ public class SceneManager : MonoBehaviour
         {
             if (panels[i].fadeIn)
             {
-                StartCoroutine(fader.FadeIn(fadeInBetweenPanels));
+                StartCoroutine(betweenPanelsFader.FadeOut(fadeInBetweenPanels)); //panels fader works backwards because fadeout makes the canvas VISIBLE, and it is applied to the panel canvas
             }
 
             panels[i].panelGO.SetActive(true);
@@ -49,7 +51,7 @@ public class SceneManager : MonoBehaviour
 
             if (panels[i].fadeOut)
             {
-                StartCoroutine(fader.FadeOut(fadeOutBetweenPanels));
+                StartCoroutine(betweenPanelsFader.FadeIn(fadeOutBetweenPanels));//panels fader works backwards because fadeout makes the canvas VISIBLE, and it is applied to the panel canvas
             }
 
             yield return new WaitForSeconds(fadeOutBetweenPanels + darkBetweenPanels);
@@ -77,7 +79,7 @@ public class SceneManager : MonoBehaviour
 
     public IEnumerator TransitionToLevelAfterSec(float duration)
     {
-        StartCoroutine(fader.FadeOut(duration));
+        StartCoroutine(betweenPanelsFader.FadeOut(duration));
 
         float elapsedTime = 0f;
 
@@ -95,7 +97,7 @@ public class SceneManager : MonoBehaviour
 
     public IEnumerator TransitionToTitleAfterSec(float duration)
     {
-        StartCoroutine(fader.FadeOut(duration));
+        StartCoroutine(betweenPanelsFader.FadeOut(duration));
 
         float elapsedTime = 0f;
 
