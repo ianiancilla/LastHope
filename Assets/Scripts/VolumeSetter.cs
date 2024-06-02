@@ -2,24 +2,35 @@ using UnityEngine;
 
 public class VolumeSetter : MonoBehaviour
 {
+    [SerializeField] AudioSource BGMSource;
+    [SerializeField] AudioSource SFXSource;
     void Start()
     {
-        SetSceneVolume();
+        SetBGMVolume();
+        SetSFXVolume();
     }
 
     private void OnEnable()
     {
-        SetSceneVolume();
-        OptionsMenu.OnVolumeChanged += SetSceneVolume;
+        SetBGMVolume();
+        SetSFXVolume();
+        OptionsMenu.OnBGMVolumeChanged += SetBGMVolume;
+        OptionsMenu.OnSFXVolumeChanged += SetSFXVolume;
     }
 
     private void OnDisable()
     {
-        OptionsMenu.OnVolumeChanged -= SetSceneVolume;
+        OptionsMenu.OnBGMVolumeChanged -= SetBGMVolume;
+        OptionsMenu.OnSFXVolumeChanged -= SetSFXVolume;
     }
 
-    public void SetSceneVolume()
+    public void SetBGMVolume()
     {
-        FindFirstObjectByType<AudioSource>().volume = PlayerprefsHelper.GetVolume();
+        BGMSource.volume = PlayerprefsHelper.GetBGMVolume();
     }
+    public void SetSFXVolume()
+    {
+        SFXSource.volume = PlayerprefsHelper.GetSFXVolume();
+    }
+
 }

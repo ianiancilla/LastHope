@@ -2,18 +2,29 @@ using UnityEngine;
 
 public static class PlayerprefsHelper
 {
-    private const string VOLUME = "volume";
+    private const string BGM_VOLUME = "BGMvolume";
+    private const string SFX_VOLUME = "SFXvolume";
+
     private const string REBINDS = "rebinds";
     private const string ACTIVE_BINDING = "activeBinding"; // 0 or 1, 0 for showing kb controls, 1 for gamepad
     private const string ACTIVE_KB_TYPE = "activeKeyboard"; // 0 for QWERTY, 1 for Colemak, 2 for custom
 
-    public static void SetVolume(float volume)
+    public static void SetBGMVolume(float volume)
     {
-        PlayerPrefs.SetFloat(VOLUME, volume);
+        PlayerPrefs.SetFloat(BGM_VOLUME, volume);
     }
-    public static float GetVolume()
+    public static float GetBGMVolume()
     {
-        return PlayerPrefs.GetFloat(VOLUME, 0.5f);
+        return PlayerPrefs.GetFloat(BGM_VOLUME, 0.5f);
+    }
+
+    public static void SetSFXVolume(float volume)
+    {
+        PlayerPrefs.SetFloat(SFX_VOLUME, volume);
+    }
+    public static float GetSFXVolume()
+    {
+        return PlayerPrefs.GetFloat(SFX_VOLUME, 0.5f);
     }
 
     public static void SetCustomRebinds(string rebinds)

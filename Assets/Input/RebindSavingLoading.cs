@@ -40,7 +40,7 @@ public class RebindSavingLoading : MonoBehaviour
     {
         var rebinds = actions.SaveBindingOverridesAsJson();
         PlayerprefsHelper.SetCustomRebinds(rebinds);
-        Debug.Log(rebinds);
+        //Debug.Log(rebinds);
     }
 
     public void LoadRebinds()

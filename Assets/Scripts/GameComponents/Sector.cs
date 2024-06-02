@@ -33,6 +33,7 @@ public class Sector : MonoBehaviour
 
     // events
     public event Action OnSectorHit;
+    public static event Action OnAnySectorHit;
     public event Action OnSectorKilled;
     public static event Action<int> OnAnySectorKilled;
     public event Action OnCannonShoot;
@@ -91,6 +92,7 @@ public class Sector : MonoBehaviour
             return;
         }
         OnSectorHit?.Invoke();
+        OnAnySectorHit?.Invoke();
     }
 
     private void SectorKilled()
