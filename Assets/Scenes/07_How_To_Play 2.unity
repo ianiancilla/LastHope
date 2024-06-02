@@ -1619,23 +1619,23 @@ MonoBehaviour:
   panelReelThenLoadNewScene: 1
   panels:
   - <panelGO>k__BackingField: {fileID: 296974730}
-    <displayTime>k__BackingField: 7
+    <displayTime>k__BackingField: 6
     <fadeIn>k__BackingField: 1
     <fadeOut>k__BackingField: 0
   - <panelGO>k__BackingField: {fileID: 712219753}
-    <displayTime>k__BackingField: 5
+    <displayTime>k__BackingField: 4.5
     <fadeIn>k__BackingField: 0
     <fadeOut>k__BackingField: 0
   - <panelGO>k__BackingField: {fileID: 1887874355}
-    <displayTime>k__BackingField: 5
+    <displayTime>k__BackingField: 4.5
     <fadeIn>k__BackingField: 0
     <fadeOut>k__BackingField: 1
   - <panelGO>k__BackingField: {fileID: 865331378}
-    <displayTime>k__BackingField: 8
+    <displayTime>k__BackingField: 4.5
     <fadeIn>k__BackingField: 1
     <fadeOut>k__BackingField: 1
   - <panelGO>k__BackingField: {fileID: 1023023324}
-    <displayTime>k__BackingField: 10
+    <displayTime>k__BackingField: 7
     <fadeIn>k__BackingField: 1
     <fadeOut>k__BackingField: 1
   fadeInDuration: 0.5
@@ -2369,18 +2369,18 @@ PrefabInstance:
     - target: {fileID: 5847160843836377639, guid: ebc116dad20d1d846a9677ba40ce7080, type: 3}
       propertyPath: m_ActionEvents.Array.data[23].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1389417792}
     - target: {fileID: 5847160843836377639, guid: ebc116dad20d1d846a9677ba40ce7080, type: 3}
       propertyPath: m_ActionEvents.Array.data[23].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5847160843836377639, guid: ebc116dad20d1d846a9677ba40ce7080, type: 3}
       propertyPath: m_ActionEvents.Array.data[23].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BackToTitle
+      value: ToTitle
       objectReference: {fileID: 0}
     - target: {fileID: 5847160843836377639, guid: ebc116dad20d1d846a9677ba40ce7080, type: 3}
       propertyPath: m_ActionEvents.Array.data[23].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelSceneManager, Assembly-CSharp
+      value: SceneManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5847160843836377639, guid: ebc116dad20d1d846a9677ba40ce7080, type: 3}
       propertyPath: m_ActionEvents.Array.data[23].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

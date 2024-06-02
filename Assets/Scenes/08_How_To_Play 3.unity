@@ -779,7 +779,7 @@ MonoBehaviour:
   panelReelThenLoadNewScene: 1
   panels:
   - <panelGO>k__BackingField: {fileID: 296974730}
-    <displayTime>k__BackingField: 7
+    <displayTime>k__BackingField: 6
     <fadeIn>k__BackingField: 1
     <fadeOut>k__BackingField: 1
   fadeInDuration: 1
