@@ -4,13 +4,22 @@ using UnityEngine.UI;
 
 public class OptionsMenu : MonoBehaviour
 {
-    [SerializeField] Slider volumeSlider;
+    [SerializeField] Slider BGMVolumeSlider;
+    [SerializeField] Slider SFXVolumeSlider;
 
-    public static event Action OnVolumeChanged;
+    public static event Action OnBGMVolumeChanged;
+    public static event Action OnSFXVolumeChanged;
 
-    public void OnVolumeSliderChanged()
+
+    public void OnBGMVolumeSliderChanged()
     {
-        PlayerprefsHelper.SetVolume(volumeSlider.value);
-        OnVolumeChanged?.Invoke();
+        PlayerprefsHelper.SetBGMVolume(BGMVolumeSlider.value);
+        OnBGMVolumeChanged?.Invoke();
     }
+    public void OnSFXVolumeSliderChanged()
+    {
+        PlayerprefsHelper.SetSFXVolume(SFXVolumeSlider.value);
+        OnSFXVolumeChanged?.Invoke();
+    }
+
 }

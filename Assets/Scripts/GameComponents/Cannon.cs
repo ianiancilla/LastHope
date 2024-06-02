@@ -5,18 +5,22 @@ using System;
 public class Cannon : MonoBehaviour
 {
     [SerializeField] float aimingSpeed = 5f;
-    [SerializeField] private GameObject projectilePrefab;
     [SerializeField] float reloadTime;
+    [SerializeField] private GameObject projectilePrefab;
 
     // cache
     [SerializeField] Transform cannonSprite;
     [SerializeField] Transform projectileOrigin;
     [SerializeField] Sector mySector;
 
+
     private Asteroid currentTarget;
     private List<Asteroid> targets = new List<Asteroid>();
     private bool isLoaded;
     private float reloadTimer;
+
+    public static event Action OnAnyCannonShot;
+    public static event Action OnAnyCannonShotFailed;
 
     private void Start()
     {
@@ -71,15 +75,28 @@ public class Cannon : MonoBehaviour
 
     public void Shoot()
     {
-        if (!isLoaded) return;
+        if (!isLoaded)
+        {
+            OnAnyCannonShotFailed?.Invoke();
+            return;
+        }
 
-        if (projectilePrefab == null) 
+        if (projectilePrefab == null)
         {
             Debug.Log("No projectile prefab set on cannon.");
-            return ; 
+            return;
         }
-        
-        // spawn and init projectile, and set on correct layer
+
+        OnAnyCannonShot?.Invoke();
+        SpawnAndInitialiseProjectile();
+
+        // reload handling
+        isLoaded = false;
+        reloadTimer = reloadTime;
+    }
+
+    private void SpawnAndInitialiseProjectile()
+    {
         GameObject projectileGO = Instantiate(projectilePrefab,
                                                 projectileOrigin.position,
                                                 Quaternion.identity,
@@ -92,10 +109,6 @@ public class Cannon : MonoBehaviour
 
         // spawns need to be on the same sector layer, for both collisions and camera culling
         Helpers.ChangeLayersRecursively(projectileGO, gameObject.layer);
-
-        // reload handling
-        isLoaded = false;
-        reloadTimer = reloadTime;
     }
 
     private void Reload()
@@ -107,4 +120,5 @@ public class Cannon : MonoBehaviour
             mySector.CannonLoaded();
         }
     }
+
 }
