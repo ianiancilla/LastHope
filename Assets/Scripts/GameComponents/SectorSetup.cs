@@ -38,7 +38,7 @@ public class SectorSetup : MonoBehaviour
         // ignore if player chose to use kb controls, text for those is set in the 
         // sector via UI_BindingIcon.
         // TODO: move this to the same place
-        Debug.Log("active binding:"+PlayerprefsHelper.GetActiveBinding());
+        //Debug.Log("active binding:"+PlayerprefsHelper.GetActiveBinding());
         if (PlayerprefsHelper.GetActiveBinding() == 0) { return;}
         sectorButtonAsString = sectorPadButtonAsString;
         inputButtonUI.text = sectorButtonAsString;

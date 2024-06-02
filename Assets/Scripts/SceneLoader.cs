@@ -10,7 +10,7 @@ public static class SceneLoader
     private static readonly int endingMeh = 4;
     private static readonly int endingGood = 5;
 
-    private static readonly int howToPlayIndex = -1;
+    private static readonly int howToPlayIndex = 6;
 
 
     public static void LoadMainMenu()

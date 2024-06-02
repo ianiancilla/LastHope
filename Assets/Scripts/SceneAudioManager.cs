@@ -13,12 +13,7 @@ public class SceneAudioManager : MonoBehaviour
     [SerializeField] private AudioClip UIClickSound;
 
     // cache
-    private AudioSource audioSource;
-
-    private void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
+    [SerializeField] private AudioSource SFXAudioSource;
 
     private void OnEnable()
     {
@@ -62,19 +57,19 @@ public class SceneAudioManager : MonoBehaviour
 
     public void PlayRandomClipFromArray(AudioClip[] audioClips)
     {
-        Debug.Log($"Playing a sound from {audioClips}");
+        //Debug.Log($"Playing a sound from {audioClips}");
         if (audioClips == null || audioClips.Length == 0) { return; }
 
         int index = Random.Range(0, audioClips.Length);
-        Debug.Log($"Playing {audioClips[index]}");
-        audioSource.PlayOneShot(audioClips[index], 1f);
+        //Debug.Log($"Playing {audioClips[index]}");
+        SFXAudioSource.PlayOneShot(audioClips[index], 1f);
     }
 
     public void PlayUIClick()
     {
-        Debug.Log($"Playing UI click");
+        //Debug.Log($"Playing UI click");
         if (UIClickSound == null) { return; }
-        audioSource.PlayOneShot(UIClickSound, 1f);
+        SFXAudioSource.PlayOneShot(UIClickSound, 1f);
     }
 
 }

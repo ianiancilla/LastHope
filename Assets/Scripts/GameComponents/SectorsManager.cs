@@ -67,6 +67,7 @@ public class SectorsManager: MonoBehaviour
         for (int i = 0; i < peoplePerSector.Length; i++)
         {
             Sectors[i].SetPeopleInSector(peoplePerSector[i]);
+            Debug.Log($"{Sectors[i]} was set to {peoplePerSector[i]} people.");
         }
     }
 
@@ -78,14 +79,16 @@ public class SectorsManager: MonoBehaviour
 
     IEnumerator ActivateSectorsAtRandomAfterInterval()
     {
+        if (inactiveSectors.Count <= 0)
+        {
+            yield break;
+        }
+
         yield return new WaitForSeconds(monitorStartInterval);
 
         ActivateRandomSector();
 
-        if (inactiveSectors.Count > 0)
-        {
-            StartCoroutine(ActivateSectorsAtRandomAfterInterval());
-        }
+        StartCoroutine(ActivateSectorsAtRandomAfterInterval());
     }
 
     private void ActivateRandomSector()

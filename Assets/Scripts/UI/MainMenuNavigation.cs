@@ -29,6 +29,13 @@ public class MainMenuNavigation : MonoBehaviour
         creditsMenu.SetActive(true);
     }
 
+    public void StartTutorial()
+    {
+        SceneLoader.LoadHowToPlay();
+    }
+
+
+
     public void StartIntro()
     {
         SceneLoader.LoadIntro();

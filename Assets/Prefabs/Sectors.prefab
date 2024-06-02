@@ -70,8 +70,8 @@ MonoBehaviour:
   - {fileID: 7917294658910873558}
   - {fileID: 5581121942843335929}
   - {fileID: 4962899974625633358}
-  monitorStartInterval: 5
-  <evacTimePerPerson>k__BackingField: 0.35
+  monitorStartInterval: 4.5
+  <evacTimePerPerson>k__BackingField: 0.5
   <TotalPeopleToEvacuate>k__BackingField: 1000
   minimumPeoplePerSector: 70
   <interferenceDelays>k__BackingField: 0.8

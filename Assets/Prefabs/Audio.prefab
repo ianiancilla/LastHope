@@ -241,6 +241,7 @@ MonoBehaviour:
   sectorSavedSounds:
   - {fileID: 8300000, guid: e521319e7dbd4394898c87be7751cc08, type: 3}
   UIClickSound: {fileID: 8300000, guid: 684b914a39faac24c8879f7e835b1bb2, type: 3}
+  SFXAudioSource: {fileID: 7193064944796477677}
 --- !u!82 &7193064944796477677
 AudioSource:
   m_ObjectHideFlags: 0

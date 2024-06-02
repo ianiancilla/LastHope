@@ -259,8 +259,8 @@ MonoBehaviour:
   - {fileID: 2697732253775233661}
   - {fileID: 8484604618175275911}
   maxAsteroidsOnScreen: 2
-  spawnTimerMin: 3
-  spawnTimerMax: 4.5
+  spawnTimerMin: 2.3
+  spawnTimerMax: 3.8
   mySector: {fileID: 0}
 --- !u!1 &4811845841618457262
 GameObject:

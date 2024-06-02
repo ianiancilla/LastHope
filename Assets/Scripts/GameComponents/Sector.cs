@@ -17,6 +17,7 @@ public class Sector : MonoBehaviour
     [SerializeField] GameObject interferencePanel;
     [SerializeField] GameObject successfulEvacuationPanel;
     [SerializeField] GameObject panelCannonLoaded;
+    [SerializeField] int maxHealth = 2;
 
     [field: SerializeField] public Transform VFXParent { get; private set; }
 
@@ -24,7 +25,6 @@ public class Sector : MonoBehaviour
     private bool isEvacuated = false;
     private bool isKilled = false;
 
-    private int maxHealth = 2;
     private int currentHealth;
 
     private int peopleInSector;

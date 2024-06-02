@@ -33,11 +33,16 @@ public class SceneManager : MonoBehaviour
     {
         if (!panelReelThenLoadNewScene) { return; }
 
-        StartCoroutine(PanelSequence());
+        StartCoroutine(PanelSequenceThenLoadNextScene());
     }
 
-    IEnumerator PanelSequence()
+    IEnumerator PanelSequenceThenLoadNextScene()
     {
+        foreach (SlidePanel panel in panels)
+        {
+            panel.panelGO.SetActive(false);
+        }
+
         for (int i = 0; i < panels.Length; i++)
         {
             if (panels[i].fadeIn)
@@ -59,7 +64,17 @@ public class SceneManager : MonoBehaviour
             panels[i].panelGO.SetActive(false);
         }
 
-        SceneLoader.LoadLevel();
+        int currentSceneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
+        int scenesInBuild = UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings;
+        if (currentSceneIndex + 1 < scenesInBuild)
+        {
+            // load next scene
+            UnityEngine.SceneManagement.SceneManager.LoadScene(currentSceneIndex + 1);
+        }
+        else
+        {
+            SceneLoader.LoadMainMenu();
+        }
     }
 
     public void SkipIntro()

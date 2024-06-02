@@ -111,8 +111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aimingSpeed: 4
+  reloadTime: 1.7
   projectilePrefab: {fileID: 4472082105791527042, guid: 9fc42d4ab96d43c4bbac55a05d4fcca0, type: 3}
-  reloadTime: 1
   cannonSprite: {fileID: 5831360889330162345}
   projectileOrigin: {fileID: 7037580560447597420}
   mySector: {fileID: 0}
