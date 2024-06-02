@@ -8061,11 +8061,6 @@ MonoBehaviour:
   QwertyToggle: {fileID: 1089552597}
   ColemakToggle: {fileID: 1695808462}
   CustomToggle: {fileID: 1797819050}
---- !u!1 &1863648638 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6674605531806071101, guid: 88cbe7ef2fad13541b35441de9044361, type: 3}
-  m_PrefabInstance: {fileID: 7896590346137408995}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1885270372 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6723606790118662763, guid: deefbe4fc62eaa44f8d940b11fbc3e05, type: 3}
@@ -9108,7 +9103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 1863648638}
+  m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &2134992042
