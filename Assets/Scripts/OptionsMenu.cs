@@ -11,6 +11,13 @@ public class OptionsMenu : MonoBehaviour
     public static event Action OnSFXVolumeChanged;
 
 
+    private void Start()
+    {
+        BGMVolumeSlider.value = PlayerprefsHelper.GetBGMVolume();
+        SFXVolumeSlider.value = PlayerprefsHelper.GetSFXVolume();
+
+    }
+
     public void OnBGMVolumeSliderChanged()
     {
         PlayerprefsHelper.SetBGMVolume(BGMVolumeSlider.value);

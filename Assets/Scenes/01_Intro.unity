@@ -158,6 +158,10 @@ PrefabInstance:
       propertyPath: betweenPanelsFader
       value: 
       objectReference: {fileID: 832470066}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: panels.Array.data[0].<fadeIn>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3896710089692965525, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_LocalPosition.z
       value: -20

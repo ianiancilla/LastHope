@@ -19,8 +19,8 @@ public class SceneManager : MonoBehaviour
     [SerializeField] FadeInOut sceneFader;
     [SerializeField] FadeInOut betweenPanelsFader;
 
-    [SerializeField] AudioSource audioSource;
 
+    public static event Action<float> OnVolumeChanged;
 
     void Start()
     {
@@ -77,6 +77,7 @@ public class SceneManager : MonoBehaviour
     }
 
 
+    // TODO repeatede code
     public IEnumerator TransitionToLevelAfterSec(float duration)
     {
         StartCoroutine(sceneFader.FadeOut(duration));
@@ -86,15 +87,16 @@ public class SceneManager : MonoBehaviour
         while (elapsedTime < duration)
         {
             yield return new WaitForEndOfFrame();
-            audioSource.volume = 1f - elapsedTime / duration;
+
+            OnVolumeChanged?.Invoke(1f - elapsedTime / duration);
             elapsedTime += Time.deltaTime;
         }
-
-        audioSource.volume = 0f;
 
         SceneLoader.LoadLevel();
     }
 
+
+    // TODO repeatede code
     public IEnumerator TransitionToTitleAfterSec(float duration)
     {
         StartCoroutine(sceneFader.FadeOut(duration));
@@ -104,12 +106,9 @@ public class SceneManager : MonoBehaviour
         while (elapsedTime < duration)
         {
             yield return new WaitForEndOfFrame();
-            audioSource.volume = 1f - elapsedTime / duration;
+            OnVolumeChanged?.Invoke(1f - elapsedTime / duration);
             elapsedTime += Time.deltaTime;
         }
-
-        audioSource.volume = 0f;
-
         SceneLoader.LoadMainMenu();
     }
 
