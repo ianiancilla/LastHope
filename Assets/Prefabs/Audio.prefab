@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootSounds:
-  - {fileID: 8300000, guid: 9de9b0a2e4702f04fb51604617609513, type: 3}
+  - {fileID: 8300000, guid: f261d05b6b9e2c341b9c79f2b1eec6d4, type: 3}
   failedShootSounds:
   - {fileID: 8300000, guid: 684b914a39faac24c8879f7e835b1bb2, type: 3}
   sectorDamagedSounds:
