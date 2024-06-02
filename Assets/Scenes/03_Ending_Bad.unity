@@ -240,6 +240,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 813873232663850886}
     - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: endSceneDelay
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: fadeInDuration
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: panels.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: svgImages.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -280,9 +292,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: panelReelThenLoadNewScene
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: displayTimes.Array.data[0]
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: panels.Array.data[0].<fadeIn>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: panels.Array.data[0].<fadeOut>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: panels.Array.data[0].<panelGO>k__BackingField
+      value: 
+      objectReference: {fileID: 813873232663850887}
     - target: {fileID: 3855192952060707313, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -471,6 +499,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7963564617919905524, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: m_Name
+      value: Scene Manager
+      objectReference: {fileID: 0}
     - target: {fileID: 8498142206428666585, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.74999994
@@ -573,6 +605,11 @@ MonoBehaviour:
 --- !u!82 &813873232663850886 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 1166862033324800684, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+  m_PrefabInstance: {fileID: 813873232663850883}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &813873232663850887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3503283562116144766, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
   m_PrefabInstance: {fileID: 813873232663850883}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807

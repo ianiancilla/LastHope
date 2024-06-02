@@ -232,13 +232,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: fader
-      value: 
-      objectReference: {fileID: 813873232663850885}
-    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-      propertyPath: audioSource
-      value: 
-      objectReference: {fileID: 813873232663850886}
+      propertyPath: panels.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: svgImages.Array.size
       value: 1
@@ -279,6 +275,22 @@ PrefabInstance:
       propertyPath: svgImages.Array.data[7]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: panelReelThenLoadNewScene
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: panels.Array.data[0].<fadeIn>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: panels.Array.data[0].<fadeOut>k__BackingField
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381919238863505318, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: panels.Array.data[0].<panelGO>k__BackingField
+      value: 
+      objectReference: {fileID: 813873232663850885}
     - target: {fileID: 3855192952060707313, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -467,6 +479,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7963564617919905524, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+      propertyPath: m_Name
+      value: Scenen Manager
+      objectReference: {fileID: 0}
     - target: {fileID: 8498142206428666585, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.74999994
@@ -555,20 +571,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ab81e4164c60f46b9b453e39e64896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &813873232663850885 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8566293414080573899, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
-  m_PrefabInstance: {fileID: 813873232663850883}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dcf0dc15b50f5c47bf8e74b6c3e44ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!82 &813873232663850886 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1166862033324800684, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
+--- !u!1 &813873232663850885 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3503283562116144766, guid: cdebb4ba1e7eeb446a4b78a472121629, type: 3}
   m_PrefabInstance: {fileID: 813873232663850883}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807

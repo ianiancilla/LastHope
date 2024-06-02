@@ -15,35 +15,35 @@ public static class SceneLoader
 
     public static void LoadMainMenu()
     {
-        SceneManager.LoadScene(mainMenuIndex);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(mainMenuIndex);
     }
 
     public static void LoadHowToPlay()
     {
-        SceneManager.LoadScene(howToPlayIndex);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(howToPlayIndex);
     }
 
     public static void LoadIntro()
     {
-        SceneManager.LoadScene(introIndex);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(introIndex);
     }
 
     public static void LoadLevel()
     {
-        SceneManager.LoadScene(levelIndex);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(levelIndex);
     }
 
     public static void LoadBadEnding()
     {
-        SceneManager.LoadScene(endingBad);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(endingBad);
     }
     public static void LoadMehEnding()
     {
-        SceneManager.LoadScene(endingMeh);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(endingMeh);
     }
     public static void LoadGoodEnding()
     {
-        SceneManager.LoadScene(endingGood);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(endingGood);
     }
 
 }

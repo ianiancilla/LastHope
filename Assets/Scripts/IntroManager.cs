@@ -1,17 +1,19 @@
+using System;
 using System.Collections;
 using UnityEngine;
-
-public class IntroSequence : MonoBehaviour
+public class SceneManager : MonoBehaviour
 {
-    [SerializeField] bool loadSceneAutomatically = true;
+    [SerializeField] bool panelReelThenLoadNewScene = true;
 
-    [SerializeField] GameObject[] svgImages;  // Array to hold SVG game objects
-    [SerializeField] float[] displayTimes;    // Array to hold display times for each SVG
+    [SerializeField] SlidePanel[] panels;
 
     [SerializeField] float fadeInDuration = 0.5f;
     [SerializeField] float skipSceneDelay = 0.3f;
     [SerializeField] float endSceneDelay = 0.5f;
-    [SerializeField] float fadeBetweenPanels = 0.5f;
+    [SerializeField] float fadeInBetweenPanels = 0.5f;
+    [SerializeField] float fadeOutBetweenPanels = 0.5f;
+    [SerializeField] float darkBetweenPanels = 0.5f;
+
 
 
     [SerializeField] FadeInOut fader;
@@ -27,27 +29,32 @@ public class IntroSequence : MonoBehaviour
 
     private void StartPanelReel()
     {
-        if (!loadSceneAutomatically) { return; }
+        if (!panelReelThenLoadNewScene) { return; }
 
-        if (svgImages.Length != displayTimes.Length)
-        {
-            Debug.LogError("The number of SVG images and display times must match!");
-            return;
-        }
-        StartCoroutine(ShowSVGSequence());
+        StartCoroutine(PanelSequence());
     }
 
-    IEnumerator ShowSVGSequence()
+    IEnumerator PanelSequence()
     {
-        for (int i = 0; i < svgImages.Length; i++)
+        for (int i = 0; i < panels.Length; i++)
         {
-            svgImages[i].SetActive(true);    // Show the SVG
+            if (panels[i].fadeIn)
+            {
+                StartCoroutine(fader.FadeIn(fadeInBetweenPanels));
+            }
 
-            yield return new WaitForSeconds(displayTimes[i] - fadeBetweenPanels); // Wait for specified time
-            StartCoroutine(fader.FadeOut(fadeBetweenPanels));
-            yield return new WaitForSeconds(fadeBetweenPanels);
-            StartCoroutine (fader.FadeIn(fadeBetweenPanels));
-            svgImages[i].SetActive(false);   // Hide the SVG
+            panels[i].panelGO.SetActive(true);
+
+            yield return new WaitForSeconds(panels[i].displayTime - fadeOutBetweenPanels - darkBetweenPanels); 
+
+            if (panels[i].fadeOut)
+            {
+                StartCoroutine(fader.FadeOut(fadeOutBetweenPanels));
+            }
+
+            yield return new WaitForSeconds(fadeOutBetweenPanels + darkBetweenPanels);
+
+            panels[i].panelGO.SetActive(false);
         }
 
         SceneLoader.LoadLevel();
