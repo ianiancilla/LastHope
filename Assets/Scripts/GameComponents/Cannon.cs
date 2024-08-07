@@ -77,6 +77,7 @@ public class Cannon : MonoBehaviour
     {
         if (!isLoaded)
         {
+            //Debug.Log("Shot failed");
             OnAnyCannonShotFailed?.Invoke();
             return;
         }
